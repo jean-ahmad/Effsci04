@@ -1,0 +1,427 @@
+<!--<!DOCTYPE html>-->
+
+<html lang="fr">
+
+  <head>
+    <title>Codage de l'information</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" media="screen" type="text/css" title="Design" href="design.css" />
+  </head>
+
+  <body>
+    
+    <div class="contenu">
+      
+      <!--             Titre                -->
+      <div class="gros_titre">
+	<h1>Codage de l'information</h1>
+	<img style="max-width: 50vw;" src="images/numeration.jpg" alt="">
+	
+	<!--             Navigation                -->
+	<div class="navigation">
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="codageinfo_1.html">
+	    Binaire
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="codageinfo_2.html">
+	    hexadécimal
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" class="lien_actif" href="codageinfo_3.html">
+	    Codes à barres
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="codageinfo_4.html">
+	    Applications 1
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="codageinfo_5.html">
+	    Applications 2
+	  </a>
+	</div>
+      </div>
+      
+      <!--             Questions               -->
+      <div class="justifie">
+	
+	<h2>Codes à barres 1D</h2>
+	
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Un code à barres 1D est une succession de barres verticales et d'espaces, qui permettent de coder une information, dans la zone de données (voir ci-contre), de type caractères alphanumériques.</p>
+
+	    <p>Il existe différents systèmes de code, permettant de coder des jeux de caractères définis et avec des domaines d'application distincts:</p>
+
+	    <ul>
+	      <li>UPC/EAN/JAN:
+		<p>Codage des chiffres, de 0 à 9, uniquement. Système de code utilisé dans le domaine de la distribution, commun à 60 pays, et qui couvre environ 90% des besoins quotidiens en matière de codage.</p></li>
+
+	      <li>CODE39:
+		<p>Codage des chiffres (de 0 à 9), des symboles (-, espace, $, /, +, %, .), et de l'alphabet (de A à Z). Système de code utilisé dans les domaines techniques (Automobile, Electrique, ...). Les caractères de départ et de fin sont une étoile (*).</p></li>
+	    </ul>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img style="max-width: 35vw;" src="images/codesbarres_1.jpg" alt=""><br/>Constitution d'un code à barres<br/>
+	    </div>
+	  </div>
+	</div>
+
+	<h3>Principe de lecture</h3>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Il existe deux catégories de lecteurs de codes à barres, les lecteurs à laser et les lecteurs à CCD (type de capteur d'images présent dans les caméras).</p>
+
+	    <p>Les lecteurs à laser permettent une lecture à grande distance ainsi que pour des objets en mouvement, alors que les lecteurs à CCD sont plus compacts, peu onéreux, et ont une durée de vie importante en raison de l'absence de moteur.</p>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img style="max-width: 30vw;border: 2px solid black;" src="images/codesbarres_2.jpg" alt=""><br/>Constitution d'un lecteur à laser<br/>
+	    </div>
+	  </div>
+	</div>
+
+	<p><br/></p>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Le principe de lecture des lecteurs à laser est:</p>
+
+	    <ol>
+	      <li>Le faisceau laser, émis par la diode laser, est réfléchi par le miroir polygonal en rotation, et balaie le code-barre.</li>
+	      <li>La lumière réfléchie est captée par l’élément récepteur (Photo transistor).</li>
+	      <li>La forme de l’onde du faisceau lumineux réfléchie est représentée, voir dans l’illustration ci-contre, comme un signal analogique.</li>
+	      <li>L’onde subit une conversion A/N (Analogique/Numérique) afin de pouvoir délimiter clairement les deux types de zones (espace et barre).</li>
+	      <li>La largeur de chaque barre et de chaque espace est déterminée à partir du signal numérique.</li>
+	      <li>Ces données sont décodées. La série de barres et d’espaces est lue conformément à un système de code, puis les données sont envoyées en sortie par un connecteur.</li>
+	    </ol>	    
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img style="max-width: 30vw;border: 2px solid black;" src="images/codesbarres_3.jpg" alt=""><br/>Principe de lecture des lecteurs à laser<br/>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="double_1090">
+	  <div class="colonne_gauche">
+	    <img style="max-width: 50vw;" src="images/problemes.jpg" alt="">
+	  </div>
+	  <div class="colonne_droite"><h3>Exercice 1, décodage d'un code à barres</h3></div>
+	</div>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Le ticket dans la photo ci-contre est un billet d'entrée pour un planétarium qui s'appelle "La porte des étoiles".</p>
+
+	    <p>On va maintenant s'intéresser au code à barres contenu dans le ticket.</p>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img style="max-width: 35vw;" src="images/codesbarres_4.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<h4>Question 1:</h4>
+
+	<p><b>Donnez</b>, en justifiant votre réponse, le nom du système de code qui correspond au code à barres présent sur le ticket:</p>
+
+	<textarea cols="70" maxlength="3000" rows="10"
+		  wrap="hard" placeholder="Ecrivez votre réponse ici."></textarea>
+
+	<h4>Question 2:</h4>
+
+	<p>La photo ci-dessous est un agrandissement du code à barres du ticket:</p>
+
+	<div class="image_centree"><img style="max-width:50vw;" src="images/codesbarres_5.jpg" alt=""><br/><br/></div>
+
+	<p>On représente une bande étroite, blanche ou noire, par la lettre "E", et une bande large, blanche ou noire, par la lettre "L". Dans le code à barres, chaque chiffre est séparé du suivant par une bande étroite blanche.</p>
+
+	<p><b>Complétez</b> le tableau suivant en décodant le code à barres du ticket:</p>
+
+	<table style="margin-left:auto;margin-right:auto;">
+	  <tr>
+	    <td style="background-color:grey;"></td><td style="background-color:grey;">Codes</td><td>4</td><td>EEELLEEEL (non présent dans le code)</td>
+	  </tr>
+	  <tr>
+	    <td>*</td><td>ELEELELEE</td><td>5</td><td><form style="margin: 0 0 0 0;"><input placeholder="?????????" style="border:1px solid #999999;text-align:left;" maxlength="9" size="30"></form></td>
+	  </tr>
+	  <tr>
+	    <td>0</td><td>EEELLELEE</td><td>6</td><td>EELLLEEEE</td>
+	  </tr>
+	  <tr>
+	    <td>1</td><td><form style="margin: 0 0 0 0;"><input placeholder="?????????" style="border:1px solid #999999;text-align:left;" maxlength="9" size="30"></form></td><td>7</td><td>EEELEELEL (non présent dans le code)</td> <!-- 1 => LEELEEEEL -->
+	  </tr>
+	  <tr>
+	    <td>2</td><td>EELLEEEEL</td><td>8</td><td>LEELEELEE (non présent dans le code)</td>
+	  </tr>
+	  <tr>
+	    <td>3</td><td><form style="margin: 0 0 0 0;"><input placeholder="?????????" style="border:1px solid #999999;text-align:left;" maxlength="9" size="30"></form></td><td>9</td><td>EELLEELEE (non présent dans le code)</td>
+	  </tr>
+	</table>
+
+	<h4>Question 3:</h4>
+
+	<p>Le capture d'écran, ci-dessous, contient la forme d'un signal, acquis par un lecteur de codes à barres, après la conversion analgique/numérique:</p>
+
+	<div class="image_centree"><img style="max-width:50vw;" src="images/codesbarres_6.jpg" alt=""><br/><br/></div>
+
+	<p><b>Complétez</b> le tableau suivant:</p>
+
+	<table style="margin-left:auto;margin-right:auto;">
+	  <tr>
+	    <td style="background-color:grey;">Données</td><td>b7</td><td>b6</td><td>b5</td><td>b4</td><td>b3</td><td>b2</td><td>b1</td><td>b0</td>
+	  </tr>
+	  <tr>
+	    <td style="background-color:grey;">Valeurs binaires</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	  </tr>
+	  <tr>
+	    <td style="background-color:grey;">Valeurs hexadécimales</td><td style="text-align:center;" colspan="4"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td><td style="text-align:center;" colspan="4"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	  </tr>	      
+	</table>
+
+	<p></p>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p><a></a>L'ASCII, code américain normalisé pour l'échange d'information, est une norme informatique de codage de caractères.</p>
+
+	    <p>Dans sa version standard, l'ASCII permet d'associer 8 bits avec des caractères de contrôle (retour à la ligne, fin de ligne, ...), des lettres (minuscules et majuscules), des chiffres, et de caractères spéciaux (@, +, -, =, ...). En effet, les systèmes numériques ne connaissent, de base, que le 0 et le 1.</p>
+
+	    <p>Pour coder la lettre "n", par exemple, dans un système numérique qui utilise l'ASCII, il faut écrire 110 1110<sub>2</sub> = 6E<sub>16</sub> dans la mémoire du système. Pour comprendre cela, il faut voir que la lettre "n" est située à la ligne (quartet de poids fort) 6<sub>16</sub> et à la colonne (quartet de poids faible) E<sub>16</sub>.</p> 
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img style="max-width: 35vw;" src="images/codesbarres_7.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<p><b>Quel</b> est le caractère qui correspond au signal, ci-dessus, acquis par un lecteur de codes à barres:</p>
+
+	<textarea cols="70" maxlength="1" rows="10"
+		  wrap="hard" placeholder="Ecrivez votre réponse ici."></textarea>
+	
+	<div class="double_1090">
+	  <div class="colonne_gauche">
+	    <img style="max-width: 50vw;" src="images/problemes.jpg" alt="">
+	  </div>
+	  <div class="colonne_droite"><h3>Exercice 2, création d'un code à barres personnel</h3></div>
+	</div>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p><b>Cliquez</b> sur l'image ci-contre et, dans le nouveau site qui s'ouvre, <b>effectuez</b> les actions suivantes:</p>
+
+	    <ol>
+	      <li>Sélectionnez le système de code: Codes linéaires/Code-39,</li>
+	      <li>Ecrivez, en majuscule, votre Nom et Prénom,</li>
+	      <li>Cliquez sur "Rafraîchir",</li>
+	      <li>Téléchargez votre code à barres personnel et convertissez-le, en utilisant le logiciel Paint, au format JPEG.</li>
+	    </ol>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><a target="_blank" href="https://barcode.tec-it.com/fr"><img style="max-width: 40vw;" src="images/codesbarres_8.jpg" alt=""></a><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<p><b>Enregistrez</b> le fichier JPEG contenant votre code à barre personnel.</p>
+	
+
+	<h2>Codes à barres 2D: Data Matrix</h2>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Un code Data Matrix est une image composée d'un damier, avec des carrés noirs ou blancs, et permettant d'encoder des caractères alphabétiques ou des chiffres.</p>
+
+	    <p>Sa taille peut aller de 10&times;10  à 144&times;144 carrés (bordure incluse). Il peut contenir jusqu'à 3116 chiffres, ou 2335 chiffres et lettres.</p> 
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img style="max-width: 40vw;border: 2px solid black;" src="images/codesbarres_9.jpg" alt=""><br/>Un Data Matrix sur une puce électronique<br/>
+	    </div>
+	  </div>
+	</div>
+
+	<h3>Décodage d'un code Data Matrix</h3>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Un Data Matrix se compose d'une bordure qui permet de le lire dans n'importe quelle direction, et d'une zone de données.</p> 
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img style="max-width: 40vw;border: 2px solid black;" src="images/codesbarres_10.jpg" alt=""><br/>Structure d'un Data Matrix<br/>
+	    </div>
+	  </div>
+	</div>
+
+	<p><br/></p>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>La zone de données d'un Data Matrix se compose de deux sous zones:</p>
+
+	    <ul>
+	      <li>La sous zone des données, en jaune dans l'image ci-contre, codées pour les besoins des utilisateurs,</li>
+	      <li>La sous zone des codes de Reed-Solomon, en vert dans l'image ci-contre, qui permettent de corriger les erreurs de lecture (code en partie effacé, ...).</li>
+	    </ul>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img style="max-width: 25vw" src="images/codesbarres_11.jpg" alt=""><br/>zone de données d'un Data Matrix de 10&times;10<br/>
+	    </div>
+	  </div>
+	</div>
+
+	<p><br/></p>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Un Data Matrix de 10&times;10 est composé de 8 codewords, voir l'image ci-contre, qui servent pour le codage des données et des codes de Reed-Solomon.</p>
+
+	    <p>Un codeword contient 8 bits, donc 1 octet, numérotés de 1 à 8.</p>
+
+	    <p>Les bits des codewords sont repérés par deux chiffres. Le bit en haut à gauche, dans le Data Matrix ci-contre, est repéré par "2.1". Il s'agit du bit de poids fort (MSB) du codeword n°2. Donc les bits, du poids fort au poids faible, du codeword n°2 sont: "2.1", "2.2", "2.3", "2.4", "4.5", "2.6", "2.7", "2.8".</p>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img style="max-width: 25vw" src="images/codesbarres_12.jpg" alt=""><br/>codewords<br/>
+	    </div>
+	  </div>
+	</div>
+
+	<p><br/></p>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Nous allons maintenant décoder le codeword n°1 du Data Matrix incomplet ci-contre.</p>
+
+	    <p>Pour commencer, il faut savoir que si la zone carrée du bit est de couleur blanche, la valeur associée est "0", et si elle est noire, la valeur associée est "1".</p>
+
+	    <p>Ensuite, il faut utiliser le tableau suivant:</p>
+	    
+	    <table style="margin-left:auto;margin-right:auto;text-align:center;">
+	      <tr><td style="background-color:black;color:white;text-align:center;width:30%;">Valeur décimale du codeword</td><td style="background-color:black;color:white;text-align:center;border-left: 3px solid white;">Données décodées</td></tr>
+	      
+	      <tr><td>1 - 128</td><td style="border-left: 3px solid black;">Caractère ASCII (Soustraire 1 à la valeur et consulter la <a href="#tableascii">table ASCII</a>)</td></tr>
+	      <tr><td style="background-color:grey;">129</td><td style="background-color:grey;border-left: 3px solid black;">Caractère blanc</td></tr>
+	      <tr><td style="">130 - 229</td><td style="border-left: 3px solid black;">Nombre à deux chiffres de 0 à 99 (nombre = valeur du codeword - 130)</td></tr>
+	    </table>
+
+	    <p>Donc: codeword n°1 = 10001010<sub>2</sub> = 138<sub>10</sub>. D'après le tableau, ci-dessus, il s'agit d'un nombre qui vaut: 138 - 130 = 8.</p>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img style="max-width: 25vw" src="images/codesbarres_13.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+	
+	<div class="double_1090">
+	  <div class="colonne_gauche">
+	    <img style="max-width: 50vw;" src="images/problemes.jpg" alt="">
+	  </div>
+	  <div class="colonne_droite"><h3>Exercice 1, décodage d'un Data Matrix</h3></div>
+	</div>
+	
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Le but de l'exercice est de décoder le mot contenu dans le Data Matrix ci-contre.</p>
+	    
+	    <p>La taille du Data Matrix est 10&times;10.</p>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img style="max-width: 25vw" src="images/codesbarres_14.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<h4>Question 1:</h4>
+	
+	<p><b>Complétez</b>, la vérification se fera à la question suivante, le tableau suivant:</p>
+
+	<table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;">
+	  <tr><td style="border-top: 0vw solid black;border-left: 0vw solid black;"></td><td style="background-color:black;color:white;text-align:center;width:25%;">Valeur binaire du codeword</td><td style="background-color:black;color:white;text-align:center;border-left: 2px solid white;width:25%;">Valeur décimale du codeword</td><td style="background-color:black;color:white;text-align:center;border-left: 2px solid white;width:25%;">Caractère décodé</td></tr>
+	  
+	  <tr><td style="background-color:grey;width:20%;">codeword n°1:</td><td><form style="margin: 0 0 0 0;"><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></form></td><td><form style="margin: 0 0 0 0;"><input placeholder="???" style="border:1px solid #999999;text-align:center;" maxlength="3" size="4"></form></td><td><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></form></td></tr>
+	  <tr><td style="background-color:grey;width:20%;">codeword n°2:</td><td><form style="margin: 0 0 0 0;"><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></form></td><td><form style="margin: 0 0 0 0;"><input placeholder="???" style="border:1px solid #999999;text-align:center;" maxlength="3" size="4"></form></td><td><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></form></td></tr>
+	  <tr><td style="background-color:grey;width:20%;">codeword n°3:</td><td><form style="margin: 0 0 0 0;"><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></form></td><td><form style="margin: 0 0 0 0;"><input placeholder="???" style="border:1px solid #999999;text-align:center;" maxlength="3" size="4"></form></td><td><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></form></td></tr>
+	</table>
+	
+	<h4>Question 2:</h4>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p><b>Cliquez</b> sur l'image ci-contre et, dans le nouveau site qui s'ouvre, <b>effectuez</b> les actions suivantes:</p>
+
+	    <ol>
+	      <li>Sélectionnez le système de code: Codes-barres en 2D/Data Matrix,</li>
+	      <li>Saisissez le mot composé des caractères décodés à la question 1, </li>
+	      <li>Cliquez sur le bouton rafraîchir,</li>
+	      <li>Vérifiez que le Data Matrix obtenu correspond bien à celui de l'exercice, et dans le cas contraire refaites la question 1.</li>
+	    </ol>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><a target="_blank" href="https://barcode.tec-it.com/fr"><img style="max-width: 40vw;" src="images/codesbarres_15.jpg" alt=""></a><br/><br/>
+	    </div>
+	  </div>
+	</div>
+	
+	<div class="double_1090">
+	  <div class="colonne_gauche">
+	    <img style="max-width: 50vw;" src="images/problemes.jpg" alt="">
+	  </div>
+	  <div class="colonne_droite"><h3>Exercice 2, création d'un Data Matrix:</h3></div>
+	</div>
+	
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Nous souhaitons trier automatiquement des déchets, pour le recyclage, en utilisant des codes Data Matrix.</p>
+
+	    <p>Pour identifier les différents types de plastique (PETE, HDPE, PVC, LDPE, PP, PS, ou OTHER), on utilise les mots (PL1, PL2, PL3, PL4, PL5, PL6, et PL7).</p>
+
+	    <p>Le but de l'exercice est de créer un Data Matrix contenant le mot: PL2.</p>
+
+	    <p><b>Faites</b> un clic droit sur l'image ci-contre, puis <b>sélectionnez</b> "Enregistrer l'image sous...", et <b>sauvegardez-la</b> dans votre espace de travail.</p>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img style="max-width: 25vw" src="images/codesbarres_16.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<h4>Question 1:</h4>
+	
+	<p><b>Complétez</b> le tableau suivant:</p>
+
+	<table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;">
+	  <tr><td style="border-top: 0vw solid black;border-left: 0vw solid black;"></td><td style="background-color:black;color:white;text-align:center;width:25%;">Caractère à codé</td><td style="background-color:black;color:white;text-align:center;border-left: 2px solid white;width:25%;">Valeur décimale du codeword</td><td style="background-color:black;color:white;text-align:center;border-left: 2px solid white;width:25%;">Valeur binaire du codeword</td></tr>
+	  
+	  <tr><td style="background-color:grey;width:20%;">codeword n°1:</td><td>P</td><td><form style="margin: 0 0 0 0;"><input placeholder="???" style="border:1px solid #999999;text-align:center;" maxlength="3" size="4"></form></td><td><form style="margin: 0 0 0 0;"><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></form></td></tr>
+	  <tr><td style="background-color:grey;width:20%;">codeword n°2:</td><td>L</td><td><form style="margin: 0 0 0 0;"><input placeholder="???" style="border:1px solid #999999;text-align:center;" maxlength="3" size="4"></form></td><td><form style="margin: 0 0 0 0;"><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></form></td></tr>
+	  <tr><td style="background-color:grey;width:20%;">codeword n°3:</td><td>2</td><td><form style="margin: 0 0 0 0;"><input placeholder="???" style="border:1px solid #999999;text-align:center;" maxlength="3" size="4"></form></td><td><form style="margin: 0 0 0 0;"><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></form></td></tr>
+	</table>
+
+	<h4>Question 2:</h4>
+
+	<p><b>Lancez</b> le logiciel Paint, puis <b>ouvrez</b> le Data Matrix vide téléchargé au début de l'exercice, et <b>coloriez</b> les bits des codewords n°1, n°2, et n°3 en fonction des résultats trouvés à la question précédente. La zone des codes de Reed-Solomon doit être laissée vide.</p>
+
+	<p><b>Enregistrez</b> votre Data Matrix.</p>
+	
+	<!--         Bouttons de navigation                -->
+	<p></p>
+	<div class="tablesansbords">
+	  <table style="width: 100%;">
+	    <tr>
+	      <td>
+		<form action="codageinfo_2.html" method="get">
+		  <input type="submit" value="Retour" />
+		</form>
+	      </td>
+	      <td style="text-align: right;">
+		<form action="codageinfo_4.html" method="get">
+		  <input type="submit" value="Suite" />
+		</form>
+	      </td>
+	    </tr>
+	  </table>
+	</div>
+
+	<p style="text-align: right;">(cc) j. ahmad - Education Nationale - 2020</p>
+
+      </div> <!-- justifie -->
+      
+    </div> <!-- contenu -->
+    
+  </body>
+</html>

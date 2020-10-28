@@ -1,0 +1,1003 @@
+<!--<!DOCTYPE html>-->
+
+<html lang="fr">
+
+  <head>
+    <title>Codage de l'information</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" media="screen" type="text/css" title="Design" href="design.css" />
+  </head>
+
+  <body>
+    
+    <div class="contenu">
+      
+      <!--             Titre                -->
+      <div class="gros_titre">
+	<h1>Codage de l'information</h1>
+	<img style="max-width: 50vw;" src="images/numeration.jpg" alt="">
+	
+	<!--             Navigation                -->
+	<div class="navigation">
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="codageinfo_1.html">
+	    Binaire
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" class="lien_actif" href="codageinfo_2.html">
+	    hexadécimal
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="codageinfo_3.html">
+	    Codes à barres
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="codageinfo_4.html">
+	    Applications 1
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="codageinfo_5.html">
+	    Applications 2
+	  </a>
+	</div>
+      </div>
+      
+      <!--             Questions               -->
+      <div class="justifie">
+	
+	<p></p>
+	
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Le processeur d'un ordinateur personnel d'aujourd'hui est capable de manipuler des nombres binaires sur 64 bits, et les cartes graphiques peuvent manipuler des nombres binaires allant jusqu'à 256 bits. Le plus grand nombre binaire sur 64 bits s'écrit: 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111.</p>
+
+	    <p>Pour des raisons de commodité de lecture et d'écriture des nombres, les informaticiens ont inventés l'hexadécimal. C'est un système de numération qui utilise 16 symboles: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.</p>
+
+	    <p>Bien que très utile dans la programmation en assembleur, qui est le langage le plus proche de la machine, l'hexadécimal a une utilisation plus modérée en programmation, notamment grâce aux compilateurs modernes. On le rencontre encore dans quelques cas en informatique:</p>
+	    <ul>
+	      <li>Pour définir les couleurs d'une page web.</li>
+	      <li>Pour représenter l'adresse physique (MAC) d'une carte réseau d'un ordinateur.</li>
+	      <li>Pour repérer une position, dans la mémoire de l'ordinateur, où il y a eu un problème.</li>
+	    </ul>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img style="max-width: 30vw;" src="images/hexa_1.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<p>Si on utilise un nombre à trois chiffres hexadécimaux pour compter, en omettant certaines parties (lignes contenant des pointillés) qui peuvent être retrouver par la logique du comptage, cela donne:</p>
+
+	<table style="margin-left:auto;margin-right:auto;text-align:center;width:35%;">
+	  <tr><td colspan="3" style="background-color:grey;text-align:center;">hexadécimal</td><td style="background-color:grey;text-align:center;border-left: 3px solid black;">décimal</td></tr>
+	  
+	  <tr><td style="">0</td><td style="">0</td><td style="">0</td><td style="border-left: 3px solid black;">0</td></tr>
+          <tr><td style="">0</td><td style="">0</td><td style="">1</td><td style="border-left: 3px solid black;">1</td></tr>
+          <tr><td style="">0</td><td style="">0</td><td style="">2</td><td style="border-left: 3px solid black;">2</td></tr>
+          <tr><td style="">0</td><td style="">0</td><td style="">3</td><td style="border-left: 3px solid black;">3</td></tr>
+          <tr><td style="">0</td><td style="">0</td><td style="">4</td><td style="border-left: 3px solid black;">4</td></tr>
+          <tr><td style="">0</td><td style="">0</td><td style="">5</td><td style="border-left: 3px solid black;">5</td></tr>
+          <tr><td style="">0</td><td style="">0</td><td style="">6</td><td style="border-left: 3px solid black;">6</td></tr>
+          <tr><td style="">0</td><td style="">0</td><td style="">7</td><td style="border-left: 3px solid black;">7</td></tr>
+          <tr><td style="">0</td><td style="">0</td><td style="">8</td><td style="border-left: 3px solid black;">8</td></tr>
+          <tr><td style="">0</td><td style="">0</td><td style="">9</td><td style="border-left: 3px solid black;">9</td></tr>
+          <tr><td style="">0</td><td style="">0</td><td style="">A</td><td style="border-left: 3px solid black;">10</td></tr>
+          <tr><td style="">0</td><td style="">0</td><td style="">B</td><td style="border-left: 3px solid black;">11</td></tr>
+          <tr><td style="">0</td><td style="">0</td><td style="">C</td><td style="border-left: 3px solid black;">12</td></tr>
+          <tr><td style="">0</td><td style="">0</td><td style="">D</td><td style="border-left: 3px solid black;">13</td></tr>
+          <tr><td style="">0</td><td style="">0</td><td style="">E</td><td style="border-left: 3px solid black;">14</td></tr>
+          <tr><td style="">0</td><td style="">0</td><td style="">F</td><td style="border-left: 3px solid black;">15</td></tr>
+          <tr><td style="">0</td><td style="">1</td><td style="">0</td><td style="border-left: 3px solid black;">16</td></tr>
+	  <tr><td style="">0</td><td style="">1</td><td style="">1</td><td style="border-left: 3px solid black;">17</td></tr>
+	  <tr><td style="">0</td><td style="">1</td><td style="">2</td><td style="border-left: 3px solid black;">18</td></tr>
+	  <tr><td style="">0</td><td style="">1</td><td style="">3</td><td style="border-left: 3px solid black;">19</td></tr>
+	  <tr><td style="">0</td><td style="">1</td><td style="">4</td><td style="border-left: 3px solid black;">20</td></tr>
+	  <tr><td style="">0</td><td style="">1</td><td style="">5</td><td style="border-left: 3px solid black;">21</td></tr>
+	  <tr><td style="">0</td><td style="">1</td><td style="">6</td><td style="border-left: 3px solid black;">22</td></tr>
+	  <tr><td style="">0</td><td style="">1</td><td style="">7</td><td style="border-left: 3px solid black;">23</td></tr>
+	  <tr><td style="">0</td><td style="">1</td><td style="">8</td><td style="border-left: 3px solid black;">24</td></tr>
+	  <tr><td style="">0</td><td style="">1</td><td style="">9</td><td style="border-left: 3px solid black;">25</td></tr>
+	  <tr><td style="">0</td><td style="">1</td><td style="">A</td><td style="border-left: 3px solid black;">26</td></tr>
+	  <tr><td style="">0</td><td style="">1</td><td style="">B</td><td style="border-left: 3px solid black;">27</td></tr>
+	  <tr><td style="">0</td><td style="">1</td><td style="">C</td><td style="border-left: 3px solid black;">28</td></tr>
+	  <tr><td style="">0</td><td style="">1</td><td style="">D</td><td style="border-left: 3px solid black;">29</td></tr>
+	  <tr><td style="">0</td><td style="">1</td><td style="">E</td><td style="border-left: 3px solid black;">30</td></tr>
+          <tr><td style="">0</td><td style="">1</td><td style="">F</td><td style="border-left: 3px solid black;">31</td></tr>
+	  <tr><td style="">0</td><td style="">2</td><td style="">0</td><td style="border-left: 3px solid black;">32</td></tr>
+	  <tr><td style="">0</td><td style="">2</td><td style="">1</td><td style="border-left: 3px solid black;">33</td></tr>
+	  <tr><td style="">...</td><td style="">...</td><td style="">...</td><td style="border-left: 3px solid black;">...</td></tr>
+          <tr><td style="">0</td><td style="">F</td><td style="">F</td><td style="border-left: 3px solid black;">255</td></tr>
+	  <tr><td style="">1</td><td style="">0</td><td style="">0</td><td style="border-left: 3px solid black;">256</td></tr>
+	  <tr><td style="">1</td><td style="">0</td><td style="">1</td><td style="border-left: 3px solid black;">257</td></tr>
+	  <tr><td style="">...</td><td style="">...</td><td style="">...</td><td style="border-left: 3px solid black;">...</td></tr>
+	  <tr><td style="">1</td><td style="">F</td><td style="">F</td><td style="border-left: 3px solid black;">511</td></tr>
+	  <tr><td style="">2</td><td style="">0</td><td style="">0</td><td style="border-left: 3px solid black;">512</td></tr>
+	  <tr><td style="">2</td><td style="">0</td><td style="">1</td><td style="border-left: 3px solid black;">513</td></tr>
+	  <tr><td style="">...</td><td style="">...</td><td style="">...</td><td style="border-left: 3px solid black;">...</td></tr>
+	  <tr><td style="">F</td><td style="">F</td><td style="">D</td><td style="border-left: 3px solid black;">4 093</td></tr>
+	  <tr><td style="">F</td><td style="">F</td><td style="">E</td><td style="border-left: 3px solid black;">4 094</td></tr>
+	  <tr><td style="">F</td><td style="">F</td><td style="">F</td><td style="border-left: 3px solid black;">4 095</td></tr>
+	</table>
+
+	<p>Première remarque: 10<sub>10</sub> = A<sub>16</sub>, 11<sub>10</sub> = B<sub>16</sub>, 12<sub>10</sub> = C<sub>16</sub>, 13<sub>10</sub> = D<sub>16</sub>, 14<sub>10</sub> = E<sub>16</sub>, 15<sub>10</sub> = F<sub>16</sub> (le 10 en indice signifie que le nombre est en base 10, le 16 en indice signifie que le nombre est en base 16).</p>
+	
+	<p>Deuxième remarque:</p>
+	
+	<ul>
+	  <li>001<sub>16</sub> vaut 1<sub>10</sub>,</li>
+	  <li>010<sub>16</sub> vaut 16<sub>10</sub>,</li>
+	  <li>100<sub>16</sub> vaut 256<sub>10</sub>.</li>
+	</ul>
+	
+	<p>On peut continuer indéfiniment, les chiffres hexadécimaux qui composent le nombre correspondent, en décimal, à des multiples de 16. On en déduit une formule mathématique pour décoder un nombre en base 16, c'est à dire le convertir en décimal:</p>
+	
+	<p style="text-align:center;font-size:2vw;font-family:Sans-Serif;"><span style="color:rgb(64,128,255);">dn</span> ... <span style="color:rgb(255,64,128);">d1</span> <span style="color:rgb(34,177,76);">d0</span><sub>16</sub> <span style="color:rgb(0,0,0);">=</span> (<span style="color:rgb(34,177,76);">d0</span> &times; 16<sup style="color:rgb(34,177,76);">0</sup> +  <span style="color:rgb(255,64,128);">d1</span> &times; 16<sup style="color:rgb(255,64,128);">1</sup> + ... + <span style="color:rgb(64,128,255);">dn</span> &times; 16<sup style="color:rgb(64,128,255);">n</sup>)<sub>10</sub></p>
+	
+	
+	<h4>Exemples:</h4>
+	
+	<ul>
+	  <li>A 08<sub>16</sub> = (8 &times; 16<sup>0</sup> + 0 &times; 16<sup>1</sup> + 10 &times; 16<sup>2</sup>)<sub>10</sub> = (8 &times; 1 + 0 &times; 16 + 10 &times; 256)<sub>10</sub> = (8 + 0 + 2 560)<sub>10</sub> = 2 568<sub>10</sub></li>
+	  <li>8 0F 4D<sub>16</sub> = (13 &times; 16<sup>0</sup> + 4 &times; 16<sup>1</sup> + 15 &times; 16<sup>2</sup> + 0 &times; 16<sup>3</sup> + 8 &times; 16<sup>4</sup> = (13 &times; 1 + 4 &times; 16 + 15 &times; 256 + 0 &times; 4 096 + 8 &times; 65 536)<sub>10</sub>  = (13 + 64 + 3 840 + 0 + 524 288)<sub>10</sub> = 528 205<sub>10</sub></li>
+	</ul>
+
+	<div class="double_1090">
+	  <div class="colonne_gauche">
+	    <img style="max-width: 50vw;" src="images/problemes.jpg" alt="">
+	  </div>
+	  <div class="colonne_droite"><h3>Exercices de décodage de l'hexadécimal:</h3></div>
+	</div>
+
+	<p><b>Décodez</b> les nombres en base 16 suivants:</p>
+	
+	<ul>
+	      <li>D A9<sub>16</sub> = <br/><br/>
+		
+		(<input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="2"> &times; 16<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="2"> &times; 16<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="2"> &times; 16<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></sup>)<sub>10</sub> = <br/><br/>
+		
+		(<input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4">)<sub>10</sub> = <br/><br/>
+		
+		(<input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4">)<sub>10</sub> = <br/><br/>
+		
+		<input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"><sub>10</sub>
+
+		<p>Ajoutez, si besoin, un commentaire:</p>
+		
+		<textarea cols="70" maxlength="3000" rows="10"
+			  wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	      </li>
+	    </ul>
+
+	<ul>
+	      <li>5 CA 7E<sub>16</sub> = <br/><br/>
+		
+		(<input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="2"> &times; 16<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="2"> &times; 16<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="2"> &times; 16<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="2"> &times; 16<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="2"> &times; 16<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></sup>)<sub>10</sub> = <br/><br/>
+		
+		(<input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4">)<sub>10</sub> = <br/><br/>
+		
+		(<input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4">)<sub>10</sub> = <br/><br/>
+		
+		<input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"><sub>10</sub>
+
+		<p>Ajoutez, si besoin, un commentaire:</p>
+		
+		<textarea cols="70" maxlength="3000" rows="10"
+			  wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	      </li>
+	    </ul>
+
+	<ul>
+	      <li>B 8D F3<sub>16</sub> = <br/><br/>
+		
+		(<input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="2"> &times; 16<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="2"> &times; 16<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="2"> &times; 16<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="2"> &times; 16<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="2"> &times; 16<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></sup>)<sub>10</sub> = <br/><br/>
+		
+		(<input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4">)<sub>10</sub> = <br/><br/>
+		
+		(<input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4">)<sub>10</sub> = <br/><br/>
+		
+		<input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"><sub>10</sub>
+
+		<p>Ajoutez, si besoin, un commentaire:</p>
+		
+		<textarea cols="70" maxlength="3000" rows="10"
+			  wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	      </li>
+	    </ul>
+
+	<p><b>Complétez</b> le tableau ci-dessous en comptant, à partir de 0 et en tenant compte des parties omises (lignes contenant des pointillés), avec un nombre à 5 chiffres et en base 16:</p>
+
+
+	<table style="margin-left:auto;margin-right:auto;text-align:center;width:35%;">
+	      <tr><td colspan="5" style="background-color:grey;text-align:center;">hexadécimal</td><td style="background-color:grey;text-align:center;border-left: 3px solid black;">décimal</td></tr>
+	      
+	      <tr>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></form></td>
+	      </tr>
+	      <tr>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></form></td>
+	      </tr>
+	      <tr>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="border-left: 3px solid black;">...</td>
+	      </tr>
+	      <tr>
+		<td style="">0</td>
+		<td style="">0</td>
+		<td style="">0</td>
+		<td style="">1</td>
+		<td style="">1</td>
+		<td style="border-left: 3px solid black;">17</td>
+	      </tr>
+              <tr>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></form></td>
+	      </tr>
+	      <tr>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="border-left: 3px solid black;">...</td>
+	      </tr>
+	      <tr>
+		<td style="">0</td>
+		<td style="">0</td>
+		<td style="">0</td>
+		<td style="">2</td>
+		<td style="">F</td>
+		<td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></form></td>
+	      </tr>
+              <tr>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></form></td>
+	      </tr>
+              <tr>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></form></td>
+	      </tr>
+	      <tr>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="border-left: 3px solid black;">...</td>
+	      </tr>
+	      <tr>
+		<td style="">0</td>
+		<td style="">0</td>
+		<td style="">1</td>
+		<td style="">9</td>
+		<td style="">D</td>
+		<td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></form></td>
+	      </tr>
+              <tr>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></form></td>
+	      </tr>
+              <tr>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></form></td>
+	      </tr>
+              <tr>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></form></td>
+	      </tr>
+	      <tr>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="border-left: 3px solid black;">...</td>
+	      </tr>
+	      <tr>
+		<td style="">C</td>
+		<td style="">9</td>
+		<td style="">F</td>
+		<td style="">F</td>
+		<td style="">B</td>
+		<td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></form></td>
+	      </tr>	      
+              <tr>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></form></td>
+	      </tr>
+              <tr>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></form></td>
+	      </tr>
+              <tr>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></form></td>
+	      </tr>
+              <tr>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></form></td>
+	      </tr>
+              <tr>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></form></td>
+	      </tr>
+	      <tr>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="border-left: 3px solid black;">...</td>
+	      </tr>
+	      <tr>
+		<td style="">D</td>
+		<td style="">F</td>
+		<td style="">F</td>
+		<td style="">F</td>
+		<td style="">E</td>
+		<td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></form></td>
+	      </tr>
+              <tr>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></form></td>
+	      </tr>
+              <tr>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+		<td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></form></td>
+	      </tr>
+              <tr>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="">...</td>
+		<td style="border-left: 3px solid black;">...</td>
+	      </tr>
+	      <tr>
+		<td style="">F</td>
+		<td style="">F</td>
+		<td style="">F</td>
+		<td style="">F</td>
+		<td style="">F</td>
+		<td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></form></td>
+	      </tr>
+	    </table>
+	    
+	    <p>Ajoutez, si besoin, un commentaire:</p>
+	    
+	    <textarea cols="70" maxlength="3000" rows="10"
+		      wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	
+
+	<h2>Codage en hexadécimal</h2>
+	
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Pour le codage en hexadécimal on utilise, comme pour le codage en binaire, la méthode de la division Euclidienne, ou celle de la décomposition sur des puissances de 16.</p>
+
+	    <p>Les deux méthodes pour le codage en hexadécimal étant identiques à celles pour le codage en binaire, elles sont présentées uniquement avec un exemple qui illustre leur utilisation.</p>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img style="max-width: 20vw;" src="images/hexa_2.jpg" alt=""><br/><br/>Codes des couleurs en hexadécimal pour le HTML
+	    </div>
+	  </div>
+	</div>
+
+	<h3>Méthode de la division Euclidienne:</h3>
+
+	Codage en hexadécimal de 183 038<sub>10</sub>:
+
+	<table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;width:10%;">
+	  <tr>
+	    <td style="border: 0vw solid black;white-space: nowrap;">183 038</td>
+	    <td style="border-top: 0vw solid black;border-right: 0vw solid black;">16</td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"><span style="color:rgb(34,177,76);">14</span></td>
+	    <td style="border-bottom: 0vw solid black;;white-space: nowrap;">11 439</td>
+	    <td style="border-top: 0vw solid black;border-right: 0vw solid black;">16</td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"></td>
+	    <td style="border: 0vw solid black;"><span style="color:rgb(34,177,76);">15</span></td>
+	    <td style="border-bottom: 0vw solid black;">714</td>
+	    <td style="border-top: 0vw solid black;border-right: 0vw solid black;">16</td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"></td>
+	    <td style="border: 0vw solid black;"></td>
+	    <td style="border: 0vw solid black;"><span style="color:rgb(255,64,128);">10</span></td>
+	    <td style="border-bottom: 0vw solid black;">44</td>
+	    <td style="border-top: 0vw solid black;border-right: 0vw solid black;">16</td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"></td>
+	    <td style="border: 0vw solid black;"></td>
+	    <td style="border: 0vw solid black;"></td>
+	    <td style="border: 0vw solid black;"><span style="color:rgb(64,128,255);">12</span></td>
+	    <td style="border-bottom: 0vw solid black;border-right: 0vw solid black;"><span style="color:rgb(64,128,255);">2</span></td>
+	</table>
+
+	<p>Comme <span style="color:rgb(64,128,255);">12</span><sub>10</sub> = <span style="color:rgb(64,128,255);">C</span><sub>16</sub>, <span style="color:rgb(255,64,128);">10</span><sub>10</sub> = <span style="color:rgb(255,64,128);">A</span><sub>16</sub>, <span style="color:rgb(34,177,76);">15</span><sub>10</sub> = <span style="color:rgb(34,177,76);">F</span><sub>16</sub>, et <span style="color:rgb(34,177,76);">14</span><sub>10</sub> = <span style="color:rgb(34,177,76);">E</span><sub>16</sub>. 
+
+	  Donc 183 038<sub>10</sub> = <span style="color:rgb(64,128,255);">2</span> <span style="color:rgb(64,128,255);">C</span><span style="color:rgb(255,64,128);">A</span> <span style="color:rgb(34,177,76);">F</span><span style="color:rgb(34,177,76);">E</span><sub>16</sub>.</p>
+
+	<h4>Explications:</h4>
+
+	<p>En utilisant la calculatrice:</p>
+
+	<ul>
+	  <li>183 038 &divide; 16 = 11 439,875. Le quotient est 11 439, et le reste est 183 038 - 11 439 &times; 16 = 14.</li>
+	  <li>11 439 &divide; 16 = 714,9375. Le quotient est 714, et le reste est 11 439 - 714 &times; 16 = 15.</li>
+	  <li>714 &divide; 16 = 44,625. Le quotient est 44, et le reste est 714 - 44 &times; 16 = 10.</li>
+	  <li>44 &divide; 16 = 2,75. Le quotient est 2, et le reste est 44 - 2 &times; 16 = 12.</li>
+	</ul>
+
+	<h3>Méthode de la décomposition sur des puissances de 16:</h3>
+
+	<p>Codage en hexadécimal de 901 678<sub>10</sub>:</p>
+
+	<p>Le multiple de 16 qui est inférieur à 901 678<sub>10</sub> et qui s'en approche le plus est 16<sup>4</sup> = 65 536.</p>
+	
+	<table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;">
+	  <tr>
+	    <td style="border: 0vw solid black;"></td><td>16<sup>4</sup> = 65 536</td><td>16<sup>3</sup> = 4 096</td><td>16<sup>2</sup> = 256</td><td>16<sup>1</sup> = 16</td><td>16<sup>0</sup> = 1</td>
+	  </tr>
+	  <tr>
+	    <td style="background-color:grey;text-align:left;">Codage en hexadécimal:</td><td>13</td><td>12</td><td>2</td><td>2</td><td>14</td>
+	  </tr>
+	  <tr>
+	    <td style="background-color:grey;text-align:left;">Reste:</td><td>49710</td><td>558</td><td>46</td><td>14</td><td></td>
+	  </tr>
+	</table>
+	
+	<p>Comme 13<sub>10</sub> = D<sub>16</sub>, 12<sub>10</sub> = C<sub>16</sub>, et 14<sub>10</sub> = E<sub>16</sub>. Donc 901 678<sub>10</sub> = D C2 2E<sub>16</sub>.</p>
+	
+	<h4>Explications:</h4>
+
+	<p>En utilisant la calculatrice:</p>
+
+	<ul>
+	  <li>901 678 &divide; 65 536 = ‭13,758514404296875‬. Le quotient est 13, et le reste est ‭901 678 - 13‬ &times; 65 536 = 49 710.</li>
+	  <li>49 710 &divide; 4 096 = ‭‭12,13623046875‬. Le quotient est 12, et le reste est ‭49 710 - 12 &times; 4 096 = 558.</li>
+	  <li>558 &divide; 256 = ‭2,1796875‬. Le quotient est 2, et le reste est 558 - 2 &times; 256 = 46.</li>
+	  <li>46 &divide; 16 = ‭2,875‬. Le quotient est 2, et le reste est 46 - 2 &times; 16 = 14.</li>
+	</ul>
+
+	<div class="double_1090">
+	  <div class="colonne_gauche">
+	    <img style="max-width: 50vw;" src="images/problemes.jpg" alt=""> 
+	  </div>
+	  <div class="colonne_droite"><h3>Exercices de codage en hexadécimal:</h3></div>
+	</div>
+
+	<h4>Coder en hexadécimal, avec la méthode de la division Euclidienne, les nombres décimaux ci-dessous:</h4>
+	
+
+	<ul>
+	      <li>
+		<p><b>Codez</b> en hexadécimal 1 955<sub>10</sub>:</p>
+		
+		<table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;width:10%;">
+		  <tr>
+		    <td style="border: 0vw solid black;">1 955</td>
+		    <td style="border-top: 0vw solid black;border-right: 0vw solid black;">16</td>
+		  </tr>
+		  <tr>
+		    <td style="border: 0vw solid black;"><span style="color:rgb(34,177,76);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></span></td>
+		    <td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		    <td style="border-top: 0vw solid black;border-right: 0vw solid black;">16</td>
+		  </tr>
+		  <tr>
+		    <td style="border: 0vw solid black;"></td>
+		    <td style="border: 0vw solid black;"><span style="color:rgb(64,128,255);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></span></td>
+		    <td style="border-bottom: 0vw solid black;border-right: 0vw solid black;"><span style="color:rgb(64,128,255);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></span></td>
+		  </tr>
+		</table>
+
+		<p>Donc 1 955<sub>10</sub> = <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"><sub>16</sub>.</p>		
+		
+		<p>Ajoutez, si besoin, un commentaire:</p>
+		
+		<textarea cols="70" maxlength="3000" rows="10"
+			  wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	      </li>
+	    </ul>
+
+
+	<ul>
+	      <li>
+		<p><b>Codez</b> en hexadécimal 44 252‬<sub>10</sub>:</p>
+		
+		<table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;width:10%;">
+		  <tr>
+		    <td style="border: 0vw solid black;white-space: nowrap;">44 252</td>
+		    <td style="border-top: 0vw solid black;border-right: 0vw solid black;">16</td>
+		  </tr>
+		  <tr>
+		    <td style="border: 0vw solid black;"><span style="color:rgb(34,177,76);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></span></td>
+		    <td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		    <td style="border-top: 0vw solid black;border-right: 0vw solid black;">16</td>
+		  </tr>
+		  <tr>
+		    <td style="border: 0vw solid black;"></td>
+		    <td style="border: 0vw solid black;"><span style="color:rgb(255,64,128);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></span></td>
+		    <td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		    <td style="border-top: 0vw solid black;border-right: 0vw solid black;">16</td>
+		  </tr>
+		  <tr>
+		    <td style="border: 0vw solid black;"></td>
+		    <td style="border: 0vw solid black;"></td>
+		    <td style="border: 0vw solid black;"><span style="color:rgb(64,128,255);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></span></td>
+		    <td style="border-bottom: 0vw solid black;border-right: 0vw solid black;"><span style="color:rgb(64,128,255);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></span></td>
+		  </tr>
+		</table>
+
+		<p>Donc 44 252‬<sub>10</sub> = <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"><sub>16</sub>.</p>
+
+		<p>Ajoutez, si besoin, un commentaire:</p>
+		
+		<textarea cols="70" maxlength="3000" rows="10"
+			  wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	      </li>
+	    </ul>
+
+	<ul>
+	      <li>
+		<p><b>Codez</b> en hexadécimal 722 270<sub>10</sub>:</p>
+		
+		<table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;width:10%;">
+		  <tr>
+		    <td style="border: 0vw solid black;white-space: nowrap;">722 270</td>
+		    <td style="border-top: 0vw solid black;border-right: 0vw solid black;">16</td>
+		  </tr>
+		  <tr>
+		    <td style="border: 0vw solid black;"><span style="color:rgb(34,177,76);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></span></td>
+		    <td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		    <td style="border-top: 0vw solid black;border-right: 0vw solid black;">16</td>
+		  </tr>
+		  <tr>
+		    <td style="border: 0vw solid black;"></td>
+		    <td style="border: 0vw solid black;"><span style="color:rgb(255,64,128);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></span></td>
+		    <td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		    <td style="border-top: 0vw solid black;border-right: 0vw solid black;">16</td>
+		  </tr>
+		  <tr>
+		    <td style="border: 0vw solid black;"></td>
+		    <td style="border: 0vw solid black;"></td>
+		    <td style="border: 0vw solid black;"><span style="color:rgb(255,64,128);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></span></td>
+		    <td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		    <td style="border-top: 0vw solid black;border-right: 0vw solid black;">16</td>
+		  </tr>
+		  <tr>
+		    <td style="border: 0vw solid black;"></td>
+		    <td style="border: 0vw solid black;"></td>
+		    <td style="border: 0vw solid black;"></td>
+		    <td style="border: 0vw solid black;"><span style="color:rgb(64,128,255);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></span></td>
+		    <td style="border-bottom: 0vw solid black;border-right: 0vw solid black;"><span style="color:rgb(64,128,255);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></span></td>
+		  </tr>
+		</table>
+
+		<p>Donc 722 270<sub>10</sub> = <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"><sub>16</sub>.</p>
+		
+		<p>Ajoutez, si besoin, un commentaire:</p>
+		
+		<textarea cols="70" maxlength="3000" rows="10"
+			  wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	      </li>
+	    </ul>
+	
+	<h4>Coder en hexadécimal, avec la méthode de la décomposition sur des puissances de 16, les nombres décimaux ci-dessous:</h4>
+
+	<ul>
+	      <li>
+		<p><b>Codez</b> en hexadécimal 48 830<sub>10</sub>:</p>
+		
+		<table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;">
+		  <tr>
+		    <td style="border: 0vw solid black;"></td><td>16<sup>3</sup> = 4096</td><td>16<sup>2</sup> = 256</td><td>16<sup>1</sup> = 16</td><td>16<sup>0</sup> = 1</td>
+		  </tr>
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Codage en hexadécimal:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		  </tr>
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Reste:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td></td>
+		  </tr>
+		</table>
+		
+		<p>Donc 48 830<sub>10</sub> = <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"><sub>16</sub>.</p>		
+		
+		<p>Ajoutez, si besoin, un commentaire:</p>
+		
+		<textarea cols="70" maxlength="3000" rows="10"
+			  wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	      </li>
+	    </ul>
+
+	<ul>
+	      <li>
+		<p><b>Codez</b> en hexadécimal 789 989<sub>10</sub>:</p>
+		
+		<table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;">
+		  <tr>
+		    <td style="border: 0vw solid black;"></td><td style="white-space: nowrap;">16<sup>4</sup> = <br/>65 536</td><td>16<sup>3</sup> = 4096</td><td>16<sup>2</sup> = 256</td><td>16<sup>1</sup> = 16</td><td>16<sup>0</sup> = 1</td>
+		  </tr>
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Codage en hexadécimal:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		  </tr>
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Reste:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td></td>
+		  </tr>
+		</table>
+		
+		<p>Donc 789 989<sub>10</sub> = <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"><sub>16</sub>.</p>
+
+		<p>Ajoutez, si besoin, un commentaire:</p>
+		
+		<textarea cols="70" maxlength="3000" rows="10"
+			  wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	      </li>
+	    </ul>
+
+	<ul>
+	      <li>
+		<p><b>Codez</b> en hexadécimal 195 829 785‬<sub>10</sub>:</p>
+
+		<table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;">
+		  <tr>
+		    <td style="border: 0vw solid black;"></td><td style="white-space: nowrap;">16<sup>6</sup> = ‭<br/>16 777 216‬</td><td style="white-space: nowrap;">16<sup>5</sup> = ‭<br/>1 048 576‬</td>
+		  </tr>
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Codage en hexadécimal:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="8" size="5"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		  </tr>
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Reste:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="8" size="5"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		  </tr>
+		</table>
+
+		<br/><br/>
+		
+		<table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;">
+		  <tr>
+		    <td style="border: 0vw solid black;"></td><td style="white-space: nowrap;">16<sup>4</sup> = <br/>65 536</td><td>16<sup>3</sup> = 4096</td><td>16<sup>2</sup> = 256</td><td>16<sup>1</sup> = 16</td><td>16<sup>0</sup> = 1</td>
+		  </tr>
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Codage en hexadécimal:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		  </tr>
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Reste:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td></td>
+		  </tr>
+		</table>
+		
+		<p>Donc 195 829 785‬<sub>10</sub> = <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="5"><sub>16</sub>.</p>
+
+		<p>Ajoutez, si besoin, un commentaire:</p>
+		
+		<textarea cols="70" maxlength="3000" rows="10"
+			  wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	      </li>
+	    </ul>
+
+	<h2>Transcodage</h2>
+	
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Pour programmer un processeur, il faut utiliser des codes binaires qui correspondent à des instructions élémentaires. Il existe principalement deux types de jeux d'instruction dans les processeurs: CISC et RISC.</p>
+
+	    <p>Les jeux d'instruction CISC (Complex Instruction Set Computeur) correspondent aux processeurs de nos ordinateurs, qui ont un vaste nombre d'instruction permettant d'effectuer un grand nombre de taches. Les jeux d'instruction RISC (Reduced Instruction Set Computer) correspondent aux processeurs de nos téléphones portables, qui, dans le contexte d'un matériel portable, ont un petit nombre d'instruction.</p>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img style="max-width: 30vw;" src="images/hexa_3.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<p>Pour comprendre comment on transcode un nombre, du binaire vers l'hexadécimal ou de l'hexadécimal vers le binaire, nous allons compter en décimal, binaire et hexadécimal de 0 à 15:</p>
+
+	<table style="margin-left:auto;margin-right:auto;text-align:center;width:35%;">
+	  <tr><td colspan="1" style="background-color:grey;text-align:center;">décimal</td><td colspan="4" style="background-color:grey;text-align:center;border-left: 3px solid black;">binaire</td><td colspan="1" style="background-color:grey;text-align:center;border-left: 3px solid black;">hexadécimal</td></tr>
+	  
+	  <tr><td style="">0</td><td style="border-left: 3px solid black;width:20%;">0</td><td style="width:20%;">0</td><td style="width:20%;">0</td><td style="width:20%;">0</td><td style="border-left: 3px solid black;">0</td></tr>
+	  <tr><td style="">1</td><td style="border-left: 3px solid black;">0</td><td>0</td><td>0</td><td>1</td><td style="border-left: 3px solid black;">1</td></tr>
+	  <tr><td style="">2</td><td style="border-left: 3px solid black;">0</td><td>0</td><td>1</td><td>0</td><td style="border-left: 3px solid black;">2</td></tr>
+	  <tr><td style="">3</td><td style="border-left: 3px solid black;">0</td><td>0</td><td>1</td><td>1</td><td style="border-left: 3px solid black;">3</td></tr>
+	  <tr><td style="">4</td><td style="border-left: 3px solid black;">0</td><td>1</td><td>0</td><td>0</td><td style="border-left: 3px solid black;">4</td></tr>
+	  <tr><td style="">5</td><td style="border-left: 3px solid black;">0</td><td>1</td><td>0</td><td>1</td><td style="border-left: 3px solid black;">5</td></tr>
+	  <tr><td style="">6</td><td style="border-left: 3px solid black;">0</td><td>1</td><td>1</td><td>0</td><td style="border-left: 3px solid black;">6</td></tr>
+	  <tr><td style="">7</td><td style="border-left: 3px solid black;">0</td><td>1</td><td>1</td><td>1</td><td style="border-left: 3px solid black;">7</td></tr>
+	  <tr><td style="">8</td><td style="border-left: 3px solid black;">1</td><td>0</td><td>0</td><td>0</td><td style="border-left: 3px solid black;">8</td></tr>
+	  <tr><td style="">9</td><td style="border-left: 3px solid black;">1</td><td>0</td><td>0</td><td>1</td><td style="border-left: 3px solid black;">9</td></tr>
+	  <tr><td style="">10</td><td style="border-left: 3px solid black;">1</td><td>0</td><td>1</td><td>0</td><td style="border-left: 3px solid black;">A</td></tr>
+	  <tr><td style="">11</td><td style="border-left: 3px solid black;">1</td><td>0</td><td>1</td><td>1</td><td style="border-left: 3px solid black;">B</td></tr>
+	  <tr><td style="">12</td><td style="border-left: 3px solid black;">1</td><td>1</td><td>0</td><td>0</td><td style="border-left: 3px solid black;">C</td></tr>
+	  <tr><td style="">13</td><td style="border-left: 3px solid black;">1</td><td>1</td><td>0</td><td>1</td><td style="border-left: 3px solid black;">D</td></tr>
+	  <tr><td style="">14</td><td style="border-left: 3px solid black;">1</td><td>1</td><td>1</td><td>0</td><td style="border-left: 3px solid black;">E</td></tr>
+	  <tr><td style="">15</td><td style="border-left: 3px solid black;">1</td><td>1</td><td>1</td><td>1</td><td style="border-left: 3px solid black;">F</td></tr>
+	</table>
+
+	<p>On remarque que le plus grand nombre avec quatre chiffres binaires, 1111<sub>2</sub>, correspond au plus grand nombre à un chiffre hexadécimal, qui est F<sub>16</sub>.</p>
+
+	<h4>Définitions:</h4>
+
+	<p>On appelle un paquet de quatre chiffres binaires un "quartet", ou un "nibble" en anglais.</p>
+
+	<h3>Transcodage binaire vers hexadécimal</h3>
+
+	<p>Pour transcoder un nombre binaire en hexadécimal, il faut le décomposer en quartets, en partant du chiffre binaire le plus à droite et en allant vers la gauche, et associer à chacun d'eux le chiffre hexadécimal qui correspond.</p>
+
+	<h4>Exemple:</h4>
+
+	<p>On va transcoder en hexadécimal 10 1011 1101 1001 0011<sub>2</sub>:</p>
+
+	<table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;">
+	  <tr>
+	    <td style="background-color:grey;text-align:left;">Quartets:</td><td style="width:15%;">10</td><td style="width:15%;">1011</td><td style="width:15%;">1101</td><td style="width:15%;">1001</td><td style="width:15%;">0011</td>
+	  </tr>
+	  <tr>
+	    <td style="background-color:grey;text-align:left;">Chiffres en décimal:</td><td>2</td><td>11</td><td>13</td><td>9</td><td>3</td>
+	  </tr>
+	  <tr>
+	    <td style="background-color:grey;text-align:left;">Chiffres en hexadécimal:</td><td>2</td><td>B</td><td>D</td><td>9</td><td>3</td>
+	  </tr>
+	</table>
+
+	<p>Donc 10 1011 1101 1001 0011<sub>2</sub> = 2 BD 93<sub>16</sub>.</p>	
+
+	<h3>Transcodage hexadécimal vers binaire</h3>
+
+	<p>Pour transcoder un nombre hexadécimal en binaire, il faut associer à chaque chiffre du nombre le quartet qui correspond.</p>
+
+	<h4>Exemple:</h4>
+
+	<p>On va transcoder en binaire 4 C8 1E<sub>16</sub>:</p>
+
+	<table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;">
+	  <tr>
+	    <td style="background-color:grey;text-align:left;">Chiffres en hexadécimal:</td><td style="width:15%;">4</td><td style="width:15%;">C</td><td style="width:15%;">8</td><td style="width:15%;">1</td><td style="width:15%;">E</td>
+	  </tr>
+	  <tr>
+	    <td style="background-color:grey;text-align:left;">Chiffres en décimal:</td><td>4</td><td>12</td><td>8</td><td>1</td><td>14</td>
+	  </tr>
+	  <tr>
+	    <td style="background-color:grey;text-align:left;">Quartets:</td><td>100</td><td>1100</td><td>1000</td><td>0001</td><td>1110</td>
+	  </tr>
+	</table>
+
+	<p>Donc 4 C8 1E<sub>16</sub> = 100 1100 1000 0001 1110<sub>2</sub>.</p>
+
+	<div class="double_1090">
+	  <div class="colonne_gauche">
+	    <img style="max-width: 50vw;" src="images/problemes.jpg" alt="">
+	  </div>
+	  <div class="colonne_droite"><h3>Exercices sur le transcodage:</h3></div>
+	</div>
+
+	<ul>
+	  <li>
+	    <p><b>Transcodez</b> en hexadécimal 1000 1001 1010 1100 1110<sub>2</sub>:</p>
+
+	    <table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;">
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Quartets:</td><td style="width:15%;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td style="width:15%;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td style="width:15%;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td style="width:15%;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td style="width:15%;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		  </tr>
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Chiffres en décimal:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		  </tr>
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Chiffres en hexadécimal:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		  </tr>
+		</table>
+
+		<p>Donc 1000 1001 1010 1100 1110<sub>2</sub> = <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="5"><sub>16</sub>.</p>
+
+		<p>Ajoutez, si besoin, un commentaire:</p>
+		
+		<textarea cols="70" maxlength="3000" rows="10"
+			  wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+
+	  </li>
+	</ul>
+
+	<ul>
+	  <li>
+	    <p><b>Transcodez</b> en hexadécimal 111 1010 0101 1011 1111 0000 1101<sub>2</sub>:</p>
+
+	    <table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;">
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Quartets:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="5"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="5"></td>
+		  </tr>
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Chiffres en décimal:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		  </tr>
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Chiffres en hexadécimal:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		  </tr>
+		</table>
+
+		<br/><br/>
+		
+		<table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;">
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Quartets:</td><td style="width:15%;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td style="width:15%;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td style="width:15%;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td style="width:15%;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td style="width:15%;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		  </tr>
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Chiffres en décimal:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		  </tr>
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Chiffres en hexadécimal:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		  </tr>
+		</table>
+
+		<p>Donc 111 1010 0101 1011 1111 0000 1101<sub>2</sub> = <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="5"><sub>16</sub>.</p>
+
+		<p>Ajoutez, si besoin, un commentaire:</p>
+		
+		<textarea cols="70" maxlength="3000" rows="10"
+			  wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+
+	  </li>
+	</ul>
+
+	<ul>
+	  <li>
+	    <p><b>Transcodez</b> en binaire C 8E A4<sub>16</sub>:</p>
+
+	    <table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;">
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Chiffres en hexadécimal:</td><td style="width:15%;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td style="width:15%;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td style="width:15%;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td style="width:15%;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td style="width:15%;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		  </tr>
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Chiffres en décimal:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		  </tr>
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Quartets:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		  </tr>
+		</table>
+
+		<p>Donc C 8E A4<sub>16</sub> = <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="20" size="20"><sub>2</sub>.</p>
+		
+		<p>Ajoutez, si besoin, un commentaire:</p>
+		
+		<textarea cols="70" maxlength="3000" rows="10"
+			  wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+
+	  </li>
+	</ul>
+
+	<ul>
+	  <li>
+	    <p><b>Transcodez</b> en binaire 5 CA FE 0B<sub>16</sub>:</p>
+
+	    <table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;">
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Chiffres en hexadécimal:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="5"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="5"></td>
+		  </tr>
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Chiffres en décimal:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		  </tr>
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Quartets:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		  </tr>
+		</table>
+
+		<br/><br/>
+		
+		<table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;">
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Chiffres en hexadécimal:</td><td style="width:15%;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td style="width:15%;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td style="width:15%;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td style="width:15%;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td style="width:15%;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		  </tr>
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Chiffres en décimal:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		  </tr>
+		  <tr>
+		    <td style="background-color:grey;text-align:left;">Quartets:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="4"></td>
+		  </tr>
+		</table>
+
+		<p>Donc 5 CA FE 0B<sub>16</sub> = <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="35" size="36"><sub>2</sub>.</p>
+
+		<p>Ajoutez, si besoin, un commentaire:</p>
+		
+		<textarea cols="70" maxlength="3000" rows="10"
+			  wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+
+	  </li>
+	</ul>
+
+	<h2>Jeux en ligne</h2>
+
+	<p>Vous pouvez tester vos connaissances avec les jeux en ligne suivants:</p>
+
+	<ul>
+	  <li><a target="_blank" href="http://www.nreeder.com/Flash/binHex.htm">
+	      Binary-Hex Challenge</a>.</li>
+	</ul>
+
+	<!--         Bouttons de navigation                -->
+	<p></p>
+	<div class="tablesansbords">
+	  <table style="width: 100%;">
+	    <tr>
+	      <td>
+		<form action="codageinfo_1.html" method="get">
+		  <input type="submit" value="Retour" />
+		</form>
+	      </td>
+	      <td style="text-align: right;">
+		<form action="codageinfo_3.html" method="get">
+		  <input type="submit" value="Suite" />
+		</form>
+	      </td>
+	    </tr>
+	  </table>
+	</div>
+
+	<p style="text-align: right;">(cc) j. ahmad - Education Nationale - 2020</p>
+	<p><br/><br/><br/></p>
+
+      </div> <!-- justifie -->
+      
+    </div> <!-- contenu -->
+    
+  </body>
+</html>

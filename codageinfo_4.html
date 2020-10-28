@@ -1,0 +1,420 @@
+<!--<!DOCTYPE html>-->
+
+<html lang="fr">
+
+  <head>
+    <title>Codage de l'information</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" media="screen" type="text/css" title="Design" href="design.css" />
+  </head>
+
+  <body>
+    
+    <div class="contenu">
+      
+      <!--             Titre                -->
+      <div class="gros_titre">
+	<h1>Codage de l'information</h1>
+	<img style="max-width: 50vw;" src="images/numeration.jpg" alt="">
+	
+	<!--             Navigation                -->
+	<div class="navigation">
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="codageinfo_1.html">
+	    Binaire
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="codageinfo_2.html">
+	    hexadécimal
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="codageinfo_3.html">
+	    Codes à barres
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" class="lien_actif" href="codageinfo_4.html">
+	    Applications 1
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="codageinfo_5.html">
+	    Applications 2
+	  </a>
+	</div>
+      </div>
+      
+      <!--             Questions               -->
+      <div class="justifie">
+
+	<h2>Le robot LAMA</h2>
+	
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Le robot LAMA est un véhicule sans pilote destiné à l'exploration terrestre.</p>
+
+	    <p>Un récepteur GPS (Système de Positionnement Global) embarqué est utilisé pour déterminer la position géographique du robot.</p>
+
+	    <p>La trajectoire du robot peut être programmée à distance, depuis un centre de contrôle et à partir de la position courante, en envoyant les coordonnées GPS, latitudes et longitudes, du parcours.</p>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img style="max-width: 30vw;border: 2px solid black;" src="images/applis_1.jpg" alt=""><br/>Le robot LAMA<br/>
+	    </div>
+	  </div>
+	</div>
+
+	<h3>Coordonnées GPS:</h3>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Une coordonnée de latitude représente une position terrestre sur l'axe Sud-Nord. C'est l'équateur qui définit la latitude 0°. La latitude est comptée positivement, de 0° à 90°, quand elle correspond à une position située au nord de l'équateur, et négativement, de 0° à -90°, quand elle correspond à une position située au sud de l'équateur.</p>
+
+	    <p>Une coordonnée de longitude représente une position terrestre sur l'axe Est-Ouest. C'est le méridien de Greenwich, passant par Londres, qui définit la longitude 0°. La longitude est comptée positivement, de 0° à 180°, quand elle correspond à une position située à l'est du méridien de Greenwich, et négativement, de 0° à -180°, quand elle correspond à une position située à l'ouest du méridien de Greenwich.</p>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img style="max-width: 30vw;border: 2px solid black;" src="images/applis_2.jpg" alt=""><br/>Les latitudes (à gauche) et les longitudes (à droite)<br/>
+	    </div>
+	  </div>
+	</div>
+
+	<p><br/></p>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>On peut exprimer une coordonnée GPS, latitude ou longitude, de 3 façons différents:</p>
+
+	    <ul>
+	      <li>DD: Degré Décimal (ex: <span style="font-family:monospace;font-weight:bold;">-160.3°</span>),</li>
+	      <li>DM: Degré Minute (ex: <span style="font-family:monospace;font-weight:bold;">20°45.327'S</span>),</li>
+	      <li>DMS: Degré Minute Seconde (ex: <span style="font-family:monospace;font-weight:bold;">8°55'02.0"E</span>).</li>
+	    </ul>
+
+	    <p>A la fin d'une coordonnée de latitude en DM ou DMS, on rajoute la lettre "N" (idem pour les Anglais) s'il s'agit d'une position située au nord de l'équateur, et la lettre "S" (idem pour les Anglais), au lieu du signe moins devant la coordonnée, s'il s'agit d'une position située au sud de l'équateur.</p>
+
+	    <p>A la fin d'une coordonnée de longitude en DM ou DMS, on rajoute la lettre "E" (idem pour les Anglais) s'il s'agit d'une position située à l'est du méridien de Greenwich, et la lettre "O" ("W" pour les Anglais), au lieu du signe moins devant la coordonnée, s'il s'agit d'une position située à l'ouest du méridien de Greenwich.</p>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img style="max-width: 30vw;border: 2px solid black;" src="images/applis_3.jpg" alt=""><br/>Les coordonnées GPS d'une position géographique<br/>
+	    </div>
+	  </div>
+	</div>
+
+	<h3>Changement d'unité d'une coordonnée GPS</h3>
+
+	<ul>
+
+	  <li>Pour transformer une coordonnée en DD (<span style="font-family:monospace;font-weight:bold;">ddd.aaaa°</span>) vers une coordonnée en DM (<span style="font-family:monospace;font-weight:bold;">ddd°mm.bbbb'</span>), il faut utiliser la formule suivante: <span style="font-family:monospace;font-weight:bold;color:rgb(0,0,255);">mm.bbbb = 0.aaaa &times; 60</span>.
+	    <p><u>Exemple de conversion d'une longitude:</u></p>
+	    <p><span style="font-family:monospace;font-weight:bold;">-160.3°</span> = <span style="font-family:monospace;font-weight:bold;">160°18.0'W</span>.</p> <p>En effet 0.3 &times; 60 = 18, et le signe moins sur une longitude en DD indique une position à l'ouest du méridien de Greenwich.</p>
+	  </li>
+	  <li>Pour transformer une coordonnée en DM (<span style="font-family:monospace;font-weight:bold;">ddd°mm.bbbb'</span>) vers une coordonnée en DMS (<span style="font-family:monospace;font-weight:bold;">ddd°mm'ss.cccc"</span>), il faut utiliser la formule suivante: <span style="font-family:monospace;font-weight:bold;color:rgb(0,0,255);">ss.cccc = 0.bbbb &times; 60</span>.
+	    <p><u>Exemple de conversion d'une latitude:</u></p>
+	    <p><span style="font-family:monospace;font-weight:bold;">20°45.327'S</span> = <span style="font-family:monospace;font-weight:bold;">20°45'19.62"S</span>.</p> <p>En effet 0.327 &times; 60 = 19.62.</p>
+	  </li>
+
+	</ul>
+
+	<div class="double_1090">
+	  <div class="colonne_gauche">
+	    <img style="max-width: 50vw;" src="images/problemes.jpg" alt="">
+	  </div>
+	  <div class="colonne_droite"><h3>Exercice 1, coordonnées GPS du lycée La Fayette</h3></div>
+	</div>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p><b>Cliquez</b> sur l'image ci-contre et, dans le nouveau site qui s'ouvre, <b>effectuez</b> les actions suivantes:</p>
+
+	    <ol>
+	      <li><b>Recherchez</b> la zone géographique du lycée La Fayette à Champagne-sur-Seine (utilisez la roulette de la souris pour zoomer, et maintenez le clic du bouton gauche pour se déplacer), et <b>cliquez</b> dessus.</li>
+	      <li><b>Cliquez</b> sur le lien avec les coordonnées GPS au format DD.</li>
+	      <li><b>Relevez</b> les coordonnées GPS, au format DMS, de la position, et <b>renseignez</b> le questionnaire ci-dessous.</li>
+	    </ol>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><a target="_blank" href="https://www.google.fr/maps/@45.8344111,7.7772324,5.78z?hl=fr"><img style="max-width: 40vw;" src="images/applis_4.jpg" alt=""></a><br/>Coordonnées GPS d'une position avec Google Maps<br/>
+	    </div>
+	  </div>
+	</div>
+
+	<p><br/></p>
+
+	<table style="border: 0vw solid black;">
+	  <tr>
+	    <td style="border: 0vw solid black;width:5vw;">&bull; Lat:</td>
+	    <td style="border: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="3">°</td>
+	    <td style="border: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="3">'</td>
+	    <td style="border: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="8">"</td>
+	    <td style="border: 0vw solid black;width:5vw;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;width:5vw;">&bull; Lon:</td>
+	    <td style="border: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="4">°</td>
+	    <td style="border: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="3">'</td>
+	    <td style="border: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="8">"</td>
+	    <td style="border: 0vw solid black;width:5vw;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	  </tr>
+
+	</table>
+
+	<div class="double_1090">
+	  <div class="colonne_gauche">
+	    <img style="max-width: 50vw;" src="images/problemes.jpg" alt="">
+	  </div>
+	  <div class="colonne_droite"><h3>Exercice 2, décodage de données GPS</h3></div>
+	</div>
+
+	<p>Le centre de contrôle a récupéré les coordonnées GPS de la position actuelle du robot LAMA. La latitude, au format DMS, a été décodée, mais pas sa longitude:</p>
+
+	<ul>
+	  <li><span style="font-family:monospace;font-weight:bold;">Lat:&nbsp;&nbsp;3°04'01.9"S</span></li>
+	  <li><span style="font-family:monospace;font-weight:bold;">Lon:&nbsp;&nbsp;00110011 00110111 10110000 00110010 00110001 00100111 00110010 00110000 00101110 00110011 00100010 01000101</span></li>
+	</ul>
+
+	<h4>Question 1:</h4>
+	
+	<p><b>Complétez</b> le tableau ci-dessous, en utilisant <a target="_blank" href="ressources/extended_ascii.pdf">les codes ASCII étendus</a>, pour décoder la longitude:</p>
+
+	<table style="margin-left:auto;margin-right:auto;text-align:center;">
+	  <tr>
+	    <td style="width:30%;background-color:grey;">Longitude en binaire</td><td style="width:30%;background-color:grey;">Longitude</td>
+	  </tr>
+	  <tr>
+	    <td>00110011</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	  </tr>
+          <tr>
+	    <td>00110111</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	  </tr>
+          <tr>
+	    <td>10110000</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	  </tr>
+          <tr>
+	    <td>00110010</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	  </tr>
+          <tr>
+	    <td>00110001</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	  </tr>
+          <tr>
+	    <td>00100111</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	  </tr>
+          <tr>
+	    <td>00110010</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	  </tr>
+          <tr>
+	    <td>00110000</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	  </tr>
+          <tr>
+	    <td>00101110</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	  </tr>
+          <tr>
+	    <td>00110011</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	  </tr>
+          <tr>
+	    <td>00100010</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	  </tr>
+	  <tr>
+	    <td>01000101</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	  </tr>
+	</table>
+	
+	<h4>Question 2:</h4>
+	
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p><b>Cliquez</b> sur l'image ci-contre et, dans le nouveau site qui s'ouvre, <b>saisissez</b> la latitude et la longitude trouvées à la question 1.</p>
+	    
+	    <p><b>Faites</b> une capture d'écran, en appuyant sur la touche "Impr écran", du lieu où se trouve actuellement le robot LAMA, et <b>sauvegardez-la</b> au format JPEG avec le logiciel Paint.</p>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><a target="_blank" href="https://www.google.fr/maps/@45.8344111,7.7772324,5.78z?hl=fr"><img style="max-width: 40vw;" src="images/applis_5.jpg" alt=""></a><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<p><b>Enregistrez</b> votre capture d'écran de la position actuelle du robot LAMA.</p>
+	
+	<div style="margin-top: 2vw;" class="image_centree"></div>
+	
+	<div class="double_1090">
+	  <div class="colonne_gauche">
+	    <img style="max-width: 50vw;" src="images/problemes.jpg" alt=""> 
+	  </div>
+	  <div class="colonne_droite"><h3>Exercice 3, transmission d'une nouvelle position au robot LAMA</h3></div>
+	</div>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>On souhaite maintenant envoyer le robot LAMA sur le lieu des <a target="_blank" href="https://www.google.fr/search?q=chutes+victoria&client=opera&hs=BSX&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjPmd2lqo3nAhWr0eAKHcZaBt0Q_AUoAnoECBEQBA&biw=1636&bih=872">chutes Vitoria au Zimbabwe</a>. Pour se faire, il faut lui transmettre les coordonnées GPS, en DD, suivantes:</p>
+
+	    <ul>
+	      <li><span style="font-family:monospace;font-weight:bold;">Lat: -17.9245</span></li>
+	      <li><span style="font-family:monospace;font-weight:bold;">Lon: 25.857083</span></li>
+	    </ul>
+
+	    
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img style="max-width: 30vw;" src="images/applis_6.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<h4>Question 1:</h4>
+
+	<p><b>Convertissez</b> la latitude en DM:</p>
+
+	<table style="border: 0vw solid black;">
+	  <tr>
+	    <td style="border: 0vw solid black;width:5vw;">&bull; Lat:</td>
+	    <td style="border: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="3">°</td>
+	    <td style="border: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="8">'</td>
+	    <td style="border: 0vw solid black;width:5vw;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	  </tr>
+
+	</table>
+
+	<h4>Question 2:</h4>
+	
+	<p><b>Complétez</b> le tableau ci-dessous en convertissant la latitude en DMS, et en utilisant <a target="_blank" href="ressources/extended_ascii.pdf">les codes ASCII étendus</a> pour donner les valeurs binaires, de la nouvelle latitude, à transmettre au robot :</p>
+
+	<table style="margin-left:auto;margin-right:auto;text-align:center;">
+	  <tr>
+	    <td style="width:30%;background-color:grey;">Latitude en DMS</td><td style="width:30%;background-color:grey;">Latitude en binaire</td>
+	  </tr>
+	  <tr>
+	    <td>1</td><td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+          <tr>
+	    <td>7</td><td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+          <tr>
+	    <td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	    <td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+	  <tr>
+	    <td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	    <td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+	  <tr>
+	    <td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	    <td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+	  <tr>
+	    <td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	    <td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+	  <tr>
+	    <td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	    <td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+	  <tr>
+	    <td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	    <td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+	  <tr>
+	    <td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	    <td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+	  <tr>
+	    <td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	    <td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+	  <tr>
+	    <td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	    <td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+	  <tr>
+	    <td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	    <td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+	</table>
+
+	<h4>Question 3:</h4>
+
+	<p><b>Convertissez</b>, en arrondissant au troisième chiffre après la virgule, la longitude en DM:</p>
+
+	<table style="border: 0vw solid black;">
+	  <tr>
+	    <td style="border: 0vw solid black;width:5vw;">&bull; Lon:</td>
+	    <td style="border: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="4">°</td>
+	    <td style="border: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="8">'</td>
+	    <td style="border: 0vw solid black;width:5vw;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	  </tr>
+	</table>
+
+	<h4>Question 4:</h4>
+	
+	<p><b>Complétez</b> le tableau ci-dessous en convertissant la longitude en DMS, et en utilisant <a target="_blank" href="ressources/extended_ascii.pdf">les codes ASCII étendus</a> pour donner les valeurs binaires, de la nouvelle longitude, à transmettre au robot :</p>
+
+	<table style="margin-left:auto;margin-right:auto;text-align:center;">
+	  <tr>
+	    <td style="width:30%;background-color:grey;">Longitude en DMS</td><td style="width:30%;background-color:grey;">Longitude en binaire</td>
+	  </tr>
+	  <tr>
+	    <td>2</td><td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+          <tr>
+	    <td>5</td><td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+          <tr>
+	    <td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	    <td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+	  <tr>
+	    <td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	    <td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+	  <tr>
+	    <td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	    <td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+	  <tr>
+	    <td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	    <td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+	  <tr>
+	    <td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	    <td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+	  <tr>
+	    <td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	    <td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+	  <tr>
+	    <td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	    <td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+	  <tr>
+	    <td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	    <td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+	  <tr>
+	    <td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	    <td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+	  <tr>
+	    <td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="2"></td>
+	    <td><input placeholder="????????" style="border:1px solid #999999;text-align:center;" maxlength="8" size="9"></td>
+	  </tr>
+	</table>
+	
+	<!--         Bouttons de navigation                -->
+	<p></p>
+	<div class="tablesansbords">
+	  <table style="width: 100%;">
+	    <tr>
+	      <td>
+		<form action="codageinfo_3.html" method="get">
+		  <input type="submit" value="Retour" />
+		</form>
+	      </td>
+	      <td style="text-align: right;">
+		<form action="codageinfo_5.html" method="get">
+		  <input type="submit" value="Suite" />
+		</form>
+	      </td>
+	    </tr>
+	  </table>
+	</div>
+
+	<p style="text-align: right;">(cc) j. ahmad - Education Nationale - 2020</p>
+	
+      </div> <!-- justifie -->
+      
+    </div> <!-- contenu -->
+    
+  </body>
+</html>

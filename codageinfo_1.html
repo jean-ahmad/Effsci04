@@ -1,0 +1,965 @@
+<!--<!DOCTYPE html>-->
+
+<html lang="fr">
+
+  <head>
+    <title>Codage de l'information</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" media="screen" type="text/css" title="Design" href="design.css" />
+  </head>
+
+  <body>
+    
+    <div class="contenu">
+      
+      <!--             Titre                -->
+      <div class="gros_titre">
+	<h1>Codage de l'information</h1>
+	<img style="max-width: 50vw;" src="images/numeration.jpg" alt="">
+	
+	<!--             Navigation                -->
+	<div class="navigation">
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" class="lien_actif" href="codageinfo_1.html">
+	    Binaire
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="codageinfo_2.html">
+	    hexadécimal
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="codageinfo_3.html">
+	    Codes à barres
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="codageinfo_4.html">
+	    Applications 1
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="codageinfo_5.html">
+	    Applications 2
+	  </a>
+	</div>
+      </div>
+      
+      <!--             Contenu               -->
+      <div class="justifie">
+	
+	<p></p>
+	
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Alors que les hommes comptent avec dix chiffres, de 0 à 9, les ordinateurs n'utilisent que deux chiffres, 0 et 1. Dans le premier cas il s'agit de la numération décimale, ou en base 10, et dans le second cas c'est la numération binaire, ou en base 2.</p>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img style="max-width: 30vw;" src="images/binaire_1.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<p>Si on utilise un nombre à trois chiffres binaires pour compter, cela donne:</p>
+
+	<table style="margin-left:auto;margin-right:auto;text-align:center;width:35%;">
+	  <tr><td colspan="3" style="background-color:grey;text-align:center;">binaire</td><td style="background-color:grey;text-align:center;border-left: 3px solid black;">décimal</td></tr>
+	  
+	  <tr><td style="">0</td><td style="">0</td><td style="">0</td><td style="border-left: 3px solid black;">0</td></tr>
+          <tr><td style="">0</td><td style="">0</td><td style="">1</td><td style="border-left: 3px solid black;">1</td></tr>
+          <tr><td style="">0</td><td style="">1</td><td style="">0</td><td style="border-left: 3px solid black;">2</td></tr>
+          <tr><td style="">0</td><td style="">1</td><td style="">1</td><td style="border-left: 3px solid black;">3</td></tr>
+          <tr><td style="">1</td><td style="">0</td><td style="">0</td><td style="border-left: 3px solid black;">4</td></tr>
+          <tr><td style="">1</td><td style="">0</td><td style="">1</td><td style="border-left: 3px solid black;">5</td></tr>
+          <tr><td style="">1</td><td style="">1</td><td style="">0</td><td style="border-left: 3px solid black;">6</td></tr>
+          <tr><td style="">1</td><td style="">1</td><td style="">1</td><td style="border-left: 3px solid black;">7</td></tr>
+          
+	</table>
+
+	<p>On remarque que:</p>
+	<ul>
+	  <li>001<sub>2</sub> (le 2 en indice signifie que le nombre est en base 2) vaut 1<sub>10</sub> (le 10 en indice signifie que le nombre est en base 10),</li>
+	  <li>010<sub>2</sub> vaut 2<sub>10</sub>,</li>
+	  <li>100<sub>2</sub> vaut 4<sub>10</sub>.</li>
+	</ul>
+
+	<p>On peut continuer indéfiniment, les chiffres binaires qui composent le nombre correspondent, en décimal, à des multiples de 2. On en déduit une formule mathématique pour décoder un nombre en base 2, c'est à dire le convertir en décimal:</p>
+
+	<p style="text-align:center;font-size:2vw;font-family:Sans-Serif;"><span style="color:rgb(64,128,255);">dn</span> ... <span style="color:rgb(255,64,128);">d1</span> <span style="color:rgb(34,177,76);">d0</span><sub>2</sub> <span style="color:rgb(0,0,0);">=</span> (<span style="color:rgb(34,177,76);">d0</span> &times; 2<sup style="color:rgb(34,177,76);">0</sup> +  <span style="color:rgb(255,64,128);">d1</span> &times; 2<sup style="color:rgb(255,64,128);">1</sup> + ... + <span style="color:rgb(64,128,255);">dn</span> &times; 2<sup style="color:rgb(64,128,255);">n</sup>)<sub>10</sub></p>
+
+	<h4>Exemples:</h4>
+
+	<ul>
+	  <li>110<sub>2</sub> = (0 &times; 2<sup>0</sup> + 1 &times; 2<sup>1</sup> + 1 &times; 2<sup>2</sup>)<sub>10</sub> = (0 &times; 1 + 1 &times; 2 + 1 &times; 4)<sub>10</sub> = (0 + 2 + 4)<sub>10</sub> = 6<sub>10</sub></li>
+	  <li>101 1011<sub>2</sub> = (1 &times; 2<sup>0</sup> + 1 &times; 2<sup>1</sup> + 0 &times; 2<sup>2</sup> + 1 &times; 2<sup>3</sup> + 1 &times; 2<sup>4</sup> + 0 &times; 2<sup>5</sup> + 1 &times; 2<sup>6</sup>)<sub>10</sub> = (1 &times; 1 + 1 &times; 2 + 0 &times; 4 + 1 &times; 8 + 1 &times; 16 + 0 &times; 32 + 1 &times; 64)<sub>10</sub>  = (1 + 2 + 0 + 8 + 16 + 0 + 64)<sub>10</sub> = 91<sub>10</sub></li>
+	</ul>
+
+	<h4>Définitions:</h4>
+
+	<ul>
+	  <li>Un chiffre binaire s'appelle un bit. Ce nom provient des mots anglais "BInary digiT", qui signifient "chiffre binaire".</li>
+	  <li>Dans un nombre en binaire, le chiffre à l'extrême droite s'appelle le LSB. Cela provient de l'abréviation des mots anglais "Least Significant Bit", qui se traduit par "bit de poids faible".</li>
+	  <li>Dans un nombre en binaire, le chiffre à l'extrême gauche s'appelle le MSB. Cela provient de l'abréviation des mots anglais "Most Significant Bit", qui se traduit par "bit de poids fort".</li>
+	</ul>
+
+	<div class="double_1090">
+	  <div class="colonne_gauche">
+	    <img style="max-width: 50vw;" src="images/problemes.jpg" alt="">
+	  </div>
+	  <div class="colonne_droite"><h3>Exercices de décodage du binaire:</h3></div>
+	</div>
+
+	<p><b>Complétez</b> le tableau ci-dessous en comptant, à partir de 0<sub>10</sub>, avec un nombre à 5 chiffres et en base 2:</p>
+
+
+	<table style="margin-left:auto;margin-right:auto;text-align:center;width:35%;">
+	  <tr><td colspan="5" style="background-color:grey;text-align:center;">binaire</td><td style="background-color:grey;text-align:center;border-left: 3px solid black;">décimal</td></tr>
+
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+	  <tr>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style=""><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></form></td>
+	    <td style="border-left: 3px solid black;"><form style="margin: 0 0 0 0;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="2" size="1"></form></td>
+	  </tr>
+          
+	</table>
+
+	<p>Ajoutez, si besoin, un commentaire:</p>
+
+	<textarea cols="70" maxlength="3000" rows="10"
+		  wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+
+
+	<p><b>Décodez</b> les nombres en base 2 suivants:</p>
+	
+	
+	<ul>
+	  <li>1011 0111<sub>2</sub> = <br/><br/>
+	    
+	    (<input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup>)<sub>10</sub> = <br/><br/>
+	    
+	    (<input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1">)<sub>10</sub> = <br/><br/>
+	    
+	    (<input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1">)<sub>10</sub> = <br/><br/>
+	    
+	    <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"><sub>10</sub>
+	    
+	    <p>Ajoutez, si besoin, un commentaire:</p>
+	    
+	    <textarea cols="70" maxlength="3000" rows="10"
+		      wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	  </li>
+	</ul>
+
+
+	<ul>
+	  <li>10 0110 0110<sub>2</sub> = <br/><br/>
+	    
+	    (<input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup>)<sub>10</sub> = <br/><br/>
+	    
+	    (<input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1">)<sub>10</sub> = <br/><br/>
+	    
+	    (<input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1">)<sub>10</sub> = <br/><br/>
+	    
+	    <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"><sub>10</sub>
+
+	    <p>Ajoutez, si besoin, un commentaire:</p>
+
+	    <textarea cols="70" maxlength="3000" rows="10"
+		      wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	  </li>
+	</ul>
+	
+
+	<ul>
+	  <li>11 1001 1001<sub>2</sub> = <br/><br/>
+	    
+	    (<input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; 2<sup> <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></sup>)<sub>10</sub> = <br/><br/>
+	    
+	    (<input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> &times; <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1">)<sub>10</sub> = <br/><br/>
+	    
+	    (<input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"> + <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1">)<sub>10</sub> = <br/><br/>
+	    
+	    <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"><sub>10</sub>
+
+	    <p>Ajoutez, si besoin, un commentaire:</p>
+	    
+	    <textarea cols="70" maxlength="3000" rows="10"
+		      wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	  </li>
+	</ul>
+
+	<h2>Codage en binaire</h2>
+	
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Il existe deux méthodes pour coder du décimal en binaire:</p>
+	    <ol>
+	      <li>En utilisant la division Euclidienne. Cela donne une méthode facile à programmer, parce qu'elle découle d'un raisonnement mathématique.</li>
+	      <li>En faisant un tableau pour décomposer le nombre décimal sur des puissances de 2. C'est la méthode la plus simple à utiliser.</li>
+	    </ol>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img style="max-width: 20vw;" src="images/codage_binaire.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<h3>Méthode de la division Euclidienne:</h3>
+
+	<p>On réalise des divisions successives par 2, le reste de chaque division est le chiffre binaire d'ordre précédent. Ainsi, pour la n<sup>ième</sup> division par 2, le reste est le chiffre binaire d'ordre n - 1.</p>
+
+	<h4>Exemple:</h4>
+
+	Codage binaire de 67<sub>10</sub>:
+
+	<table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;width:10%;">
+	  <tr>
+	    <td style="border: 0vw solid black;">67</td>
+	    <td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"><span style="color:rgb(34,177,76);">1</span></td>
+	    <td style="border-bottom: 0vw solid black;">33</td>
+	    <td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"></td>
+	    <td style="border: 0vw solid black;"><span style="color:rgb(34,177,76);">1</span></td>
+	    <td style="border-bottom: 0vw solid black;">16</td>
+	    <td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"></td>
+	    <td style="border: 0vw solid black;"></td>
+	    <td style="border: 0vw solid black;"><span style="color:rgb(255,64,128);">0</span></td>
+	    <td style="border-bottom: 0vw solid black;">8</td>
+	    <td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"></td>
+	    <td style="border: 0vw solid black;"></td>
+	    <td style="border: 0vw solid black;"></td>
+	    <td style="border: 0vw solid black;"><span style="color:rgb(255,64,128);">0</span></td>
+	    <td style="border-bottom: 0vw solid black;">4</td>
+	    <td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"></td>
+	    <td style="border: 0vw solid black;"></td>
+	    <td style="border: 0vw solid black;"></td>
+	    <td style="border: 0vw solid black;"></td>
+	    <td style="border: 0vw solid black;"><span style="color:rgb(255,64,128);">0</span></td>
+	    <td style="border-bottom: 0vw solid black;">2</td>
+	    <td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"></td>
+	    <td style="border: 0vw solid black;"></td>
+	    <td style="border: 0vw solid black;"></td>
+	    <td style="border: 0vw solid black;"></td>
+	    <td style="border: 0vw solid black;"></td>
+	    <td style="border: 0vw solid black;"><span style="color:rgb(64,128,255);">0</span></td>
+	    <td style="border-bottom: 0vw solid black;border-right: 0vw solid black;"><span style="color:rgb(64,128,255);">1</span></td>
+	  </tr>
+	</table>
+
+	<p>Donc 67<sub>10</sub> = <span style="color:rgb(64,128,255);">1</span><span style="color:rgb(64,128,255);">0</span><span style="color:rgb(255,64,128);">0</span> <span style="color:rgb(255,64,128);">0</span><span style="color:rgb(255,64,128);">0</span><span style="color:rgb(34,177,76);">1</span><span style="color:rgb(34,177,76);">1</span><sub>2</sub>.</p>
+
+	<h3>Méthode de la décomposition sur des puissances de 2:</h3>
+
+	<p>On va coder 183<sub>10</sub> en binaire pour illustrer la méthode:</p>
+
+	<ul>
+	  <li>On commence par chercher le multiple de 2 qui est inférieur au nombre à coder et qui s'en approche le plus:
+	    <ul>
+	      <li>2<sup>0</sup> = 1,</li>
+	      <li>2<sup>1</sup> = 2,</li>
+	      <li>2<sup>2</sup> = 4,</li>
+	      <li>2<sup>3</sup> = 8,</li>
+	      <li>2<sup>4</sup> = 16,</li>
+	      <li>2<sup>5</sup> = 32,</li>
+	      <li>2<sup>6</sup> = 64,</li>
+	      <li>2<sup>7</sup> = 128,</li>
+	      <li>2<sup>8</sup> = 256.</li>	    
+	    </ul>
+	    Le multiple de 2 qui est inférieur à 183<sub>10</sub> et qui s'en approche le plus est 2<sup>7</sup> = 128.</li>
+	  <li><p>Ensuite on fait un tableau avec, de droite à gauche, la plus petite puissance de 2 jusqu'à celle trouvée à l'étape précédente:</p>
+	    
+	    <table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;">
+	      <tr>
+		<td style="border: 0vw solid black;"></td><td>2<sup>7</sup> = 128</td><td>2<sup>6</sup> = 64</td><td>2<sup>5</sup> = 32</td><td>2<sup>4</sup> = 16</td><td>2<sup>3</sup> = 8</td><td>2<sup>2</sup> = 4</td><td>2<sup>1</sup> = 2</td><td>2<sup>0</sup> = 1</td>
+	      </tr>
+	      <tr>
+		<td style="background-color:grey;text-align:left;">Codage en binaire:</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+	      </tr>
+	      <tr>
+		<td style="background-color:grey;text-align:left;">Reste:</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+	      </tr>
+	    </table>
+	    
+	    <p>Pour remplir le tableau, on procède comme suit:</p>
+	    
+	    <ul>
+	      <li>Comme 128 est inférieur à 183, on met 1 dans la case en dessous de 2<sup>7</sup>. Il reste 183 - 128 = 55.</li>
+	      <li>Comme 64 est supérieur à 55, on met 0 dans la case en dessous de 2<sup>6</sup>. Il reste toujours 55.</li>
+	      <li>Comme 32 est inférieur  à 55, on met 1 dans la case en dessous de 2<sup>5</sup>. Il reste 55 - 32 = 23.</li>
+	      <li>Comme 16 est inférieur à 23, on met 1 dans la case en dessous de 2<sup>4</sup>. Il reste 23 - 16 = 7.</li>
+	      <li>Comme 8 est supérieur à 7, on met 0 dans la case en dessous de 2<sup>3</sup>. Il reste toujours 7.</li>
+	      <li>Comme 4 est inférieur à 7, on met 1 dans la case en dessous de 2<sup>2</sup>. Il reste 7 - 4 = 3.</li>
+	      <li>Comme 2 est inférieur à 3, on met 1 dans la case en dessous de 2<sup>1</sup>. Il reste 3 - 2 = 1.</li>
+	      <li>Comme le dernier reste est 1, il faut mettre 1 dans la case en dessous de 2<sup>0</sup>. Il reste 0 et la conversion est terminée.</li>
+	    </ul>
+
+	    <p>Le tableau complété est:</p>
+
+	    <table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;">
+	      <tr>
+		<td style="border: 0vw solid black;"></td><td>2<sup>7</sup> = 128</td><td>2<sup>6</sup> = 64</td><td>2<sup>5</sup> = 32</td><td>2<sup>4</sup> = 16</td><td>2<sup>3</sup> = 8</td><td>2<sup>2</sup> = 4</td><td>2<sup>1</sup> = 2</td><td>2<sup>0</sup> = 1</td>
+	      </tr>
+	      <tr>
+		<td style="background-color:grey;text-align:left;">Codage en binaire:</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td>
+	      </tr>
+	      <tr>
+		<td style="background-color:grey;text-align:left;">Reste:</td><td>55</td><td>55</td><td>23</td><td>7</td><td>7</td><td>3</td><td>1</td><td></td>
+	      </tr>
+	    </table>
+
+	    <p>Donc 183<sub>10</sub> = 1011 0111<sub>2</sub>.</p>
+	  </li>
+	</ul>
+
+	<div class="double_1090">
+	  <div class="colonne_gauche">
+	    <img style="max-width: 50vw;" src="images/problemes.jpg" alt="">
+	  </div>
+	  <div class="colonne_droite"><h3>Exercices de codage en binaire:</h3></div>
+	</div>
+
+	<h4>Coder en binaire, avec la méthode de la division Euclidienne, les nombres décimaux ci-dessous:</h4>
+	
+	<ul>
+	  <li>
+	    <p>Codage en binaire de 87<sub>10</sub>:</p>
+	    
+	    <table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;width:10%;">
+	      <tr>
+		<td style="border: 0vw solid black;">87</td>
+		<td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	      </tr>
+	      <tr>
+		<td style="border: 0vw solid black;"><span style="color:rgb(34,177,76);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+		<td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></td>
+		<td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	      </tr>
+	      <tr>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"><span style="color:rgb(34,177,76);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+		<td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></td>
+		<td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	      </tr>
+	      <tr>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"><span style="color:rgb(255,64,128);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+		<td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></td>
+		<td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	      </tr>
+	      <tr>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"><span style="color:rgb(255,64,128);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+		<td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></td>
+		<td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	      </tr>
+	      <tr>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"><span style="color:rgb(255,64,128);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+		<td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></td>
+		<td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	      </tr>
+	      <tr>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"><span style="color:rgb(64,128,255);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+		<td style="border-bottom: 0vw solid black;border-right: 0vw solid black;"><span style="color:rgb(64,128,255);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+	      </tr>
+	    </table>
+
+	    <p>Donc 87<sub>10</sub> = <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="6"><sub>2</sub>.</p>
+
+	    <p>Ajoutez, si besoin, un commentaire:</p>
+	    
+	    <textarea cols="70" maxlength="3000" rows="10"
+		      wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	  </li>
+	</ul>
+
+	<ul>
+	  <li>
+	    <p>Codage en binaire de 231<sub>10</sub>:</p>
+	    
+	    <table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;width:10%;">
+	      <tr>
+		<td style="border: 0vw solid black;">231</td>
+		<td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	      </tr>
+	      <tr>
+		<td style="border: 0vw solid black;"><span style="color:rgb(34,177,76);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+		<td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></td>
+		<td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	      </tr>
+	      <tr>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"><span style="color:rgb(34,177,76);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+		<td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></td>
+		<td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	      </tr>
+	      <tr>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"><span style="color:rgb(255,64,128);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+		<td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></td>
+		<td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	      </tr>
+	      <tr>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"><span style="color:rgb(255,64,128);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+		<td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></td>
+		<td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	      </tr>
+	      <tr>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"><span style="color:rgb(255,64,128);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+		<td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></td>
+		<td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	      </tr>
+	      <tr>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"><span style="color:rgb(255,64,128);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+		<td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></td>
+		<td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	      </tr>
+	      <tr>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"><span style="color:rgb(64,128,255);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+		<td style="border-bottom: 0vw solid black;border-right: 0vw solid black;"><span style="color:rgb(64,128,255);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+	      </tr>
+	    </table>
+
+	    <p>Donc 231<sub>10</sub> = <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="8" size="6"><sub>2</sub>.</p>
+
+	    <p>Ajoutez, si besoin, un commentaire:</p>
+	    
+	    <textarea cols="70" maxlength="3000" rows="10"
+		      wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	  </li>
+	</ul>
+
+	<ul>
+	  <li>
+	    <p>Codage en binaire de 745<sub>10</sub>:</p>
+	    
+	    <table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;width:10%;">
+	      <tr>
+		<td style="border: 0vw solid black;">745</td>
+		<td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	      </tr>
+	      <tr>
+		<td style="border: 0vw solid black;"><span style="color:rgb(34,177,76);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+		<td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></td>
+		<td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	      </tr>
+	      <tr>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"><span style="color:rgb(34,177,76);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+		<td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></td>
+		<td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	      </tr>
+	      <tr>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"><span style="color:rgb(255,64,128);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+		<td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></td>
+		<td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	      </tr>
+	      <tr>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"><span style="color:rgb(255,64,128);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+		<td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></td>
+		<td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	      </tr>
+	      <tr>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"><span style="color:rgb(255,64,128);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+		<td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></td>
+		<td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	      </tr>
+	      <tr>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"><span style="color:rgb(255,64,128);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+		<td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></td>
+		<td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	      </tr>
+	      <tr>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"><span style="color:rgb(255,64,128);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+		<td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></td>
+		<td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	      </tr>
+	      <tr>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"><span style="color:rgb(255,64,128);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+		<td style="border-bottom: 0vw solid black;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></td>
+		<td style="border-top: 0vw solid black;border-right: 0vw solid black;">2</td>
+	      </tr>
+	      <tr>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"></td>
+		<td style="border: 0vw solid black;"><span style="color:rgb(64,128,255);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+		<td style="border-bottom: 0vw solid black;border-right: 0vw solid black;"><span style="color:rgb(64,128,255);"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="4" size="1"></span></td>
+	      </tr>
+	    </table>
+
+	    <p>Donc 745<sub>10</sub> = <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="10" size="10"><sub>2</sub>.</p>
+
+	    <p>Ajoutez, si besoin, un commentaire:</p>
+	    
+	    <textarea cols="70" maxlength="3000" rows="10"
+		      wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	  </li>
+	</ul>
+	
+	<h4>Coder en binaire, avec la méthode de la décomposition sur des puissances de 2, les nombres décimaux ci-dessous:</h4>
+
+	<ul>
+	  <li>
+	    <p>Codage en binaire de 173<sub>10</sub>:</p>
+	    
+	    <table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;">
+	      <tr>
+		<td style="border: 0vw solid black;"></td><td>2<sup>7</sup> = 128</td><td>2<sup>6</sup> = 64</td><td>2<sup>5</sup> = 32</td><td>2<sup>4</sup> = 16</td><td>2<sup>3</sup> = 8</td><td>2<sup>2</sup> = 4</td><td>2<sup>1</sup> = 2</td><td>2<sup>0</sup> = 1</td>
+	      </tr>
+	      <tr>
+		<td style="background-color:grey;text-align:left;">Codage en binaire:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td>
+	      </tr>
+	      <tr>
+		<td style="background-color:grey;text-align:left;">Reste:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td><td></td>
+	      </tr>
+	    </table>
+	    
+	    <p>Donc 173<sub>10</sub> = <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="8" size="6"><sub>2</sub>.</p>
+
+	    <p>Ajoutez, si besoin, un commentaire:</p>
+	    
+	    <textarea cols="70" maxlength="3000" rows="10"
+		      wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	    
+	  </li>
+	</ul>
+	
+
+	<ul>
+	  <li>
+	    <p>Codage en binaire de 470<sub>10</sub>:</p>
+
+	    <table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;">
+	      <tr>
+		<td style="border: 0vw solid black;"></td><td>2<sup>8</sup> = 256</td>
+	      </tr>
+	      <tr>
+		<td style="background-color:grey;text-align:left;">Codage en binaire:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td>
+	      </tr>
+	      <tr>
+		<td style="background-color:grey;text-align:left;">Reste:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td>
+	      </tr>
+	    </table>
+
+	    <br/><br/>
+	    
+	    <table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;">
+	      <tr>
+		<td style="border: 0vw solid black;"></td><td>2<sup>7</sup> = 128</td><td>2<sup>6</sup> = 64</td><td>2<sup>5</sup> = 32</td><td>2<sup>4</sup> = 16</td><td>2<sup>3</sup> = 8</td><td>2<sup>2</sup> = 4</td><td>2<sup>1</sup> = 2</td><td>2<sup>0</sup> = 1</td>
+	      </tr>
+	      <tr>
+		<td style="background-color:grey;text-align:left;">Codage en binaire:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td>
+	      </tr>
+	      <tr>
+		<td style="background-color:grey;text-align:left;">Reste:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td><td></td>
+	      </tr>
+	    </table>
+	    
+	    <p>Donc 470<sub>10</sub> = <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="10" size="8"><sub>2</sub>.</p>
+	    
+	    <p>Ajoutez, si besoin, un commentaire:</p>
+	    
+	    <textarea cols="70" maxlength="3000" rows="10"
+		      wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	  </li>
+	</ul>
+	
+	<ul>
+	  <li>
+	    <p>Codage en binaire de 941<sub>10</sub>:</p>
+
+	    <table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;">
+	      <tr>
+		<td style="border: 0vw solid black;"></td><td>2<sup>9</sup> = 512</td><td>2<sup>8</sup> = 256</td>
+	      </tr>
+	      <tr>
+		<td style="background-color:grey;text-align:left;">Codage en binaire:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td>
+	      </tr>
+	      <tr>
+		<td style="background-color:grey;text-align:left;">Reste:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td>
+	      </tr>
+	    </table>
+
+	    <br/><br/>
+
+	    <table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;">
+	      <tr>
+		<td style="border: 0vw solid black;"></td><td>2<sup>7</sup> = 128</td><td>2<sup>6</sup> = 64</td><td>2<sup>5</sup> = 32</td><td>2<sup>4</sup> = 16</td><td>2<sup>3</sup> = 8</td><td>2<sup>2</sup> = 4</td><td>2<sup>1</sup> = 2</td><td>2<sup>0</sup> = 1</td>
+	      </tr>
+	      <tr>
+		<td style="background-color:grey;text-align:left;">Codage en binaire:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="1"></td>
+	      </tr>
+	      <tr>
+		<td style="background-color:grey;text-align:left;">Reste:</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="3" size="1"></td><td></td>
+	      </tr>
+	    </table>
+
+	    <p>Donc 941<sub>10</sub> = <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="10" size="8"><sub>2</sub>.</p>
+
+	    <p>Ajoutez, si besoin, un commentaire:</p>
+
+	    <textarea cols="70" maxlength="3000" rows="10"
+		      wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	  </li>
+	</ul>
+
+	<h2>Jeux en ligne</h2>
+
+	<p>Vous pouvez tester vos connaissances avec les jeux en ligne suivants:</p>
+
+	<ul>
+	  <li><a target="_blank" href="https://studio.code.org/projects/applab/iukLbcDnzqgoxuu810unLw">
+	      The Binary Game</a>,</li>
+	  <li><a target="_blank" href="http://courses.cs.vt.edu/~cs1104/Bingo/bingo.kevin.html">
+	      Binary Bingo Practice</a>.</li>
+	</ul>
+
+
+	<!--         Bouttons de navigation                -->
+	<p></p>
+	<div class="tablesansbords">
+	  <table style="width: 100%;">
+	    <tr>
+	      <td>
+		
+	      </td>
+	      <td style="text-align: right;">
+		<form action="codageinfo_2.html" method="get">
+		  <input type="submit" value="Suite" />
+		</form>
+	      </td>
+	    </tr>
+	  </table>
+	</div>
+
+	<p style="text-align: right;">(cc) j. ahmad - Education Nationale - 2020</p>
+
+      </div> <!-- justifie -->
+
+    </div> <!-- contenu -->
+
+  </body>
+</html>
