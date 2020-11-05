@@ -75,7 +75,7 @@
 	  <li>100<sub>2</sub> vaut 4<sub>10</sub>.</li>
 	</ul>
 
-	<p>On peut continuer indéfiniment, les chiffres binaires qui composent le nombre correspondent, en décimal, à des multiples de 2. On en déduit une formule mathématique pour décoder un nombre en base 2, c'est à dire le convertir en décimal:</p>
+	<p>On peut continuer indéfiniment, les chiffres binaires qui composent le nombre correspondent, en décimal, à des puissances de 2. On en déduit une formule mathématique pour décoder un nombre en base 2, c'est à dire le convertir en décimal:</p>
 
 	<p style="text-align:center;font-size:2vw;font-family:Sans-Serif;"><span style="color:rgb(64,128,255);">dn</span> ... <span style="color:rgb(255,64,128);">d1</span> <span style="color:rgb(34,177,76);">d0</span><sub>2</sub> <span style="color:rgb(0,0,0);">=</span> (<span style="color:rgb(34,177,76);">d0</span> &times; 2<sup style="color:rgb(34,177,76);">0</sup> +  <span style="color:rgb(255,64,128);">d1</span> &times; 2<sup style="color:rgb(255,64,128);">1</sup> + ... + <span style="color:rgb(64,128,255);">dn</span> &times; 2<sup style="color:rgb(64,128,255);">n</sup>)<sub>10</sub></p>
 
@@ -513,7 +513,7 @@
 	<p>On va coder 183<sub>10</sub> en binaire pour illustrer la méthode:</p>
 
 	<ul>
-	  <li>On commence par chercher le multiple de 2 qui est inférieur au nombre à coder et qui s'en approche le plus:
+	  <li>On commence par chercher la puissance de 2 qui est inférieur au nombre à coder et qui s'en approche le plus:
 	    <ul>
 	      <li>2<sup>0</sup> = 1,</li>
 	      <li>2<sup>1</sup> = 2,</li>
@@ -525,7 +525,7 @@
 	      <li>2<sup>7</sup> = 128,</li>
 	      <li>2<sup>8</sup> = 256.</li>	    
 	    </ul>
-	    Le multiple de 2 qui est inférieur à 183<sub>10</sub> et qui s'en approche le plus est 2<sup>7</sup> = 128.</li>
+	    La puissance de 2 qui est inférieur à 183<sub>10</sub> et qui s'en approche le plus est 2<sup>7</sup> = 128.</li>
 	  <li><p>Ensuite on fait un tableau avec, de droite à gauche, la plus petite puissance de 2 jusqu'à celle trouvée à l'étape précédente:</p>
 	    
 	    <table style="border: 0vw solid black;margin-left:auto;margin-right:auto;text-align:center;">
